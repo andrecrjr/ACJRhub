@@ -1,6 +1,7 @@
 import React, { ReactElement } from "react";
 import { Container, PresentationContainer, Presentation } from "../styles";
 import { SocialNetwork } from "../../Layout/SocialNetwork";
+import { Stacks } from "../../Layout/Stacks";
 
 export default function MainPage({}): ReactElement {
 	return (
@@ -32,6 +33,14 @@ export default function MainPage({}): ReactElement {
 								socialNetworkHref={"github.com/andrecrjr"}
 								socialNetworkName={"github"}
 							/>
+						</div>
+					</Presentation>
+					<Presentation data-aos='fade-up'>
+						<div className='presentation--my-stacks'>
+							<h1 className='presentation--world'>
+								Desenvolvedor Fullstack focado em front-end!
+							</h1>
+							<Stacks />
 						</div>
 					</Presentation>
 				</PresentationContainer>

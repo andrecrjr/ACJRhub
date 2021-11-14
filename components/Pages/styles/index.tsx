@@ -24,7 +24,7 @@ export const Presentation = styled.div`
 	.social-network {
 		display: flex;
 		justify-content: row;
-		margin-top: 15px;
+		margin-top: 50px;
 		a {
 			display: flex;
 			justify-content: center;
@@ -36,17 +36,38 @@ export const Presentation = styled.div`
 			}
 		}
 	}
+
 	.presentation--world {
 		font-size: 30px;
 		font-weight: 300;
 		margin-bottom: 25px;
 	}
+
 	.presentation--pic {
 		background-image: url("https://via.placeholder.com/300x300");
 		width: 90px;
 		height: 90px;
 		border-radius: 25px;
 		background-position: center;
+	}
+
+	.presentation--my-stacks {
+		margin-top: 70px;
+		display: flex;
+		flex-direction: column;
+
+		svg {
+			width: 40px;
+			height: 40px;
+			align-self: center;
+			margin-right: 40px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	.presentation--techstacks {
+		margin: 0 auto;
 	}
 `;
 
