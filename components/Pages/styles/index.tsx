@@ -79,8 +79,8 @@ export const Presentation = styled.div`
 
 	.presentation--pic {
 		background-image: url("https://via.placeholder.com/300x300");
-		width: 90px;
-		height: 90px;
+		width: 110px;
+		height: 110px;
 		border-radius: 25px;
 		background-position: center;
 	}
