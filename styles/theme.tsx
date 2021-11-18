@@ -1,7 +1,8 @@
 export const theme = {
 	logoFont: "'Work Sans', sans-serif",
 	fontFamily: "'Work Sans', sans-serif",
-	gridWelcome: "45vw 45vw",
+	gridWelcome: "465px 235px",
+	gridHeader: "150px 550px",
 	heights: {
 		menuHeight: "2.5rem",
 	},

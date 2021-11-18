@@ -14,27 +14,24 @@ export const PresentationContainer = styled.div`
 	padding-left: ${(props) => (props.title === true ? "15px" : "0")};
 	margin: 75px 0 35px 0;
 	[data-grid="welcome-grid"] {
-		@media (min-width: 661px) {
+		@media (min-width: 767px) {
 			display: grid;
 			width: 100%;
 			height: auto;
 			grid-template-columns: ${(props) => props.theme.gridWelcome};
 			grid-template-rows: auto auto;
-			margin: 70px 0 35px 0;
+			margin: 70px 0 0 0;
 			.presentation--world {
 				font-size: 40px;
 				text-align: left;
-				justify-self: end;
 			}
 			.presentation--pic {
 				width: 225px;
 				height: 235px;
-				margin-left: 55px;
 				grid-row: span 2;
 			}
 			.social-network {
 				margin-top: 0;
-				justify-self: end;
 				margin-right: 40px;
 				a {
 					width: 55px;
@@ -45,11 +42,7 @@ export const PresentationContainer = styled.div`
 			.presentation--world {
 				font-size: 45px;
 				text-align: left;
-				justify-self: end;
 				margin-right: 50px;
-			}
-			.social-network {
-				margin-right: 125px;
 			}
 		}
 	}
