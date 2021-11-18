@@ -8,14 +8,12 @@ export default function MainPage({}): ReactElement {
 		<>
 			<Container>
 				<PresentationContainer>
-					<Presentation data-aos='fade-right'>
+					<Presentation data-grid='welcome-grid' data-aos='fade-up'>
 						<h2 className='presentation--world'>
 							Olá mundo,
-							<br /> sou André Carlos!
+							<br /> sou André Junior!
 						</h2>
 						<div className='presentation--pic'></div>
-					</Presentation>
-					<Presentation data-aos='fade-up'>
 						<div className='social-network'>
 							<SocialNetwork
 								socialNetworkHref={"linkedin.com/in/andrecrjr"}
