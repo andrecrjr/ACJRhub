@@ -4,6 +4,8 @@ import Head from "next/dist/shared/lib/head";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { ServerStyleSheet } from "styled-components";
+
 const GlobalStyle = createGlobalStyle`
 *{
  margin:0;
