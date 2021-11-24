@@ -13,7 +13,12 @@ export default function MainPage({}): ReactElement {
 							Olá mundo,
 							<br /> sou André Junior!
 						</h2>
-						<div className='presentation--pic'></div>
+						<div
+							className='presentation--pic'
+							style={{
+								backgroundImage: `url(${"/img/minime.jpg"})`,
+							}}
+						></div>
 						<div className='social-network'>
 							<SocialNetwork
 								socialNetworkHref={"linkedin.com/in/andrecrjr"}

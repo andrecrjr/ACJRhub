@@ -27,7 +27,8 @@ export const PresentationContainer = styled.div`
 			}
 			.presentation--pic {
 				width: 225px;
-				height: 235px;
+				height: 280px;
+				background-size: 225px 280px;
 				grid-row: span 2;
 			}
 			.social-network {
@@ -78,15 +79,15 @@ export const Presentation = styled.div`
 	}
 
 	.presentation--pic {
-		background-image: url("https://via.placeholder.com/300x300");
-		width: 110px;
-		height: 110px;
+		width: 80px;
+		height: 100px;
+		background-size: 80px 100px;
 		border-radius: 25px;
 		background-position: center;
 	}
 
 	.presentation--my-stacks {
-		margin-top: 70px;
+		margin-top: 35px;
 		display: flex;
 		flex-direction: column;
 
@@ -117,4 +118,5 @@ export const PortfolioItem = styled.section`
 	align-self: center;
 	background: ${(props) => props.bgColor};
 	color: white;
+	cursor: pointer;
 `;
