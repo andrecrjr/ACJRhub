@@ -55,6 +55,10 @@ export const Presentation = styled.div`
 	justify-content: center;
 	flex-direction: ${(props) => (props.row ? "row" : "column")};
 	align-items: center;
+	.bold-mark {
+		font-weight: bold;
+		display: inline;
+	}
 	.social-network {
 		display: flex;
 		justify-content: row;
