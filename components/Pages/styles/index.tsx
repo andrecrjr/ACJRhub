@@ -2,17 +2,17 @@ import styled from "styled-components";
 
 export const Container = styled.section`
 	background-color: ${(props) => props.theme.colors.backgroundPrimary};
-	height: 100vh;
+	min-height: 100vh;
+	padding: 1.5rem;
 	display: flex;
 	flex-direction: column;
 `;
 
-export const PresentationContainer = styled.div`
+export const PresentationContainer = styled.div<{ hasTitle?: String }>`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding-left: ${(props) => (props.title === true ? "15px" : "0")};
-	margin: 75px 0 35px 0;
+	padding-left: ${(props) => (props.hasTitle === "true" ? "15px" : "0")};
 	[data-grid="welcome-grid"] {
 		@media (min-width: 767px) {
 			display: grid;
@@ -49,7 +49,7 @@ export const PresentationContainer = styled.div`
 	}
 `;
 
-export const Presentation = styled.div`
+export const Presentation = styled.div<{ row?: String }>`
 	color: ${(props) => props.theme.colors.primary};
 	display: flex;
 	justify-content: center;
@@ -113,14 +113,4 @@ export const Presentation = styled.div`
 export const ContainerPortfolio = styled(Container)`
 	padding: 25px 0 20px;
 	background: #404273;
-`;
-
-export const PortfolioItem = styled.section`
-	width: 320px;
-	min-height: 124px;
-	margin-bottom: 25px;
-	align-self: center;
-	background: ${(props) => props.bgColor};
-	color: white;
-	cursor: pointer;
 `;

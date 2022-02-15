@@ -10,8 +10,8 @@ export default function MainPage({}): ReactElement {
 				<PresentationContainer>
 					<Presentation data-grid='welcome-grid' data-aos='fade-up'>
 						<h2 className='presentation--world'>
-							Olá mundo,
-							<br /> sou André Junior!
+							<strong>Hello world</strong>
+							<br /> I am André Junior!
 						</h2>
 						<div
 							className='presentation--pic'
@@ -41,7 +41,7 @@ export default function MainPage({}): ReactElement {
 					<Presentation data-aos='fade-up'>
 						<div className='presentation--my-stacks'>
 							<h1 className='presentation--world'>
-								Desenvolvedor Fullstack focado em front-end!
+								Fullstack Developer focusing in Front-end Development
 							</h1>
 							<Stacks />
 						</div>

@@ -19,7 +19,7 @@ body{
 
 function MyApp({ Component, pageProps }) {
 	useEffect(() => {
-		Aos.init({ duration: 1200 });
+		Aos.init({ duration: 1600 });
 	}, []);
 	return (
 		<>
