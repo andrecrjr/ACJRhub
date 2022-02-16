@@ -26,11 +26,18 @@ export const PortfolioItem = styled.a<{ bgColor: String }>`
 	display: block;
 	cursor: pointer;
 	text-align: center;
-	transition: width 0.5s, height 0.5s;
-	@media (min-width: 760px) {
-		&:hover {
-			width: 300px;
-			height: 200px;
-		}
+	transition: width 2s, height 2s;
+	&:hover {
+		width: 300px;
+		height: 200px;
+	}
+`;
+
+export const PortfolioItemList = styled.ul`
+	list-style: none;
+	z-index: 1px;
+	li {
+		font-size: 0.85rem;
+		text-shadow: 1px 1px 1px #404273;
 	}
 `;

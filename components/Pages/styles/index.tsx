@@ -14,6 +14,7 @@ export const PresentationContainer = styled.div<{ hasTitle?: String }>`
 	justify-content: center;
 	padding-left: ${(props) => (props.hasTitle === "true" ? "15px" : "0")};
 	[data-grid="welcome-grid"] {
+		margin-top: 60px;
 		@media (min-width: 767px) {
 			display: grid;
 			width: 100%;
@@ -44,6 +45,24 @@ export const PresentationContainer = styled.div<{ hasTitle?: String }>`
 				font-size: 45px;
 				text-align: left;
 				margin-right: 50px;
+			}
+		}
+	}
+
+	[data-grid="portfolio-grid"] {
+		.portfolio--title {
+			margin: 15px 0;
+		}
+		.portfolio--description {
+			margin-bottom: 25px;
+		}
+
+		@media (min-width: 767px) {
+			.portfolio--title {
+				margin: 45px 0;
+			}
+			.portfolio--description {
+				margin-bottom: 40px;
 			}
 		}
 	}

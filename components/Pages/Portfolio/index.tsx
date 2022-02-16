@@ -5,16 +5,18 @@ import {
 	Presentation,
 } from "../styles";
 import Link from "next/link";
-import { PortfolioList, PortfolioItem } from "./style";
+import { PortfolioList, PortfolioItem, PortfolioItemList } from "./style";
 
 export const Portfolio: React.FC = () => {
 	return (
 		<ContainerPortfolio id='portfolio'>
 			<PresentationContainer hasTitle='true'>
-				<Presentation data-aos='fade-up'>Portfolio</Presentation>
-				<Presentation data-aos='fade-up'>
-					Projetos utilizados para fins de estudo tanto de React, quanto para
-					desenvolvimento front-end em geral.
+				<Presentation data-aos='fade-up' data-grid='portfolio-grid'>
+					<div className='portfolio--title'>Portfolio Projects</div>
+					<div className='portfolio--description'>
+						Projects developing for studying purposes about Front-end in
+						general, ReactJS, NextJS, and even Telegram Bots
+					</div>
 				</Presentation>
 			</PresentationContainer>
 			<PortfolioList>
@@ -25,6 +27,11 @@ export const Portfolio: React.FC = () => {
 						bgColor='/img/spotiflex.png'
 					>
 						<h1>Spotiflex</h1>
+						<PortfolioItemList>
+							<li>Nextjs</li>
+							<li>Typescript</li>
+							<li>REST API</li>
+						</PortfolioItemList>
 					</PortfolioItem>
 				</Link>
 				<Link href='https://animebonds.surge.sh/' passHref>
@@ -34,6 +41,11 @@ export const Portfolio: React.FC = () => {
 						bgColor='/img/animebonds.png'
 					>
 						<h1>Animebonds</h1>
+						<PortfolioItemList>
+							<li>Create React App</li>
+							<li>Javascript</li>
+							<li>Apollo Graphql</li>
+						</PortfolioItemList>
 					</PortfolioItem>
 				</Link>
 				<PortfolioItem bgColor={""} data-aos='fade-up'>

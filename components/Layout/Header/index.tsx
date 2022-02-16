@@ -2,13 +2,15 @@ import React from "react";
 import { GlobalHeader } from "./style";
 import Link from "next/link";
 import { MenuLink } from "./style";
-interface Props {}
 
-const Header = (props: Props) => {
+const Header = () => {
 	return (
 		<GlobalHeader>
 			<h1 className='header--logo'>ACJRHUB</h1>
 			<nav className='header--menu'>
+				<Link href='#about-me' passHref>
+					<MenuLink>About Me!</MenuLink>
+				</Link>
 				<Link href='#portfolio' passHref>
 					<MenuLink>Portfolio</MenuLink>
 				</Link>
