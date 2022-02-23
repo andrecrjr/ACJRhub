@@ -10,7 +10,7 @@ export const PortfolioList = styled.section`
 	}
 `;
 
-export const PortfolioItem = styled.a<{ bgColor: String }>`
+export const PortfolioItem = styled.a<{bgColor: String}>`
 	width: 250px;
 	min-height: 150px;
 	margin-bottom: 25px;
@@ -26,10 +26,11 @@ export const PortfolioItem = styled.a<{ bgColor: String }>`
 	display: block;
 	cursor: pointer;
 	text-align: center;
-	transition: width 2s, height 2s;
+	transition: width 100ms ease-in, opacity 250ms !important;
+	opacity: 0.6 !important;
 	&:hover {
 		width: 300px;
-		height: 200px;
+		opacity: 1 !important;
 	}
 `;
 
@@ -38,6 +39,6 @@ export const PortfolioItemList = styled.ul`
 	z-index: 1px;
 	li {
 		font-size: 0.85rem;
-		text-shadow: 1px 1px 1px #404273;
+		text-shadow: 1px 1px 1px #6062b1;
 	}
 `;

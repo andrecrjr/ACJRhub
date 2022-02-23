@@ -5,7 +5,7 @@ import {
 	Presentation,
 } from "../styles";
 import Link from "next/link";
-import { PortfolioList, PortfolioItem, PortfolioItemList } from "./style";
+import {PortfolioList, PortfolioItem, PortfolioItemList} from "./style";
 
 export const Portfolio: React.FC = () => {
 	return (
