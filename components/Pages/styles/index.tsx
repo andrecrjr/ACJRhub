@@ -8,6 +8,8 @@ export const Container = styled.section`
 	flex-direction: column;
 `;
 
+
+
 export const PresentationContainer = styled.div<{ hasTitle?: String }>`
 	display: flex;
 	flex-direction: column;
@@ -133,3 +135,19 @@ export const ContainerPortfolio = styled(Container)`
 	padding: 25px 0 20px;
 	background: #404273;
 `;
+
+Container.defaultProps = {
+  theme: {
+    colors: {
+      backgroundPrimary: "green"
+    }
+  }
+}
+
+Presentation.defaultProps = {
+  theme: {
+    colors: {
+      primary:"blue"
+    }
+  }
+}
