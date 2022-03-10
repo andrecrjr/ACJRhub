@@ -8,8 +8,6 @@ export const Container = styled.section`
 	flex-direction: column;
 `;
 
-
-
 export const PresentationContainer = styled.div<{ hasTitle?: String }>`
 	display: flex;
 	flex-direction: column;
@@ -47,24 +45,6 @@ export const PresentationContainer = styled.div<{ hasTitle?: String }>`
 				font-size: 45px;
 				text-align: left;
 				margin-right: 50px;
-			}
-		}
-	}
-
-	[data-grid="portfolio-grid"] {
-		.portfolio--title {
-			margin: 15px 0;
-		}
-		.portfolio--description {
-			margin-bottom: 25px;
-		}
-
-		@media (min-width: 767px) {
-			.portfolio--title {
-				margin: 45px 0;
-			}
-			.portfolio--description {
-				margin-bottom: 40px;
 			}
 		}
 	}
@@ -130,24 +110,3 @@ export const Presentation = styled.div<{ row?: String }>`
 		margin: 0 auto;
 	}
 `;
-
-export const ContainerPortfolio = styled(Container)`
-	padding: 25px 0 20px;
-	background: #404273;
-`;
-
-Container.defaultProps = {
-  theme: {
-    colors: {
-      backgroundPrimary: "green"
-    }
-  }
-}
-
-Presentation.defaultProps = {
-  theme: {
-    colors: {
-      primary:"blue"
-    }
-  }
-}

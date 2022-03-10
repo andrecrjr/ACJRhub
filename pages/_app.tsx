@@ -1,6 +1,5 @@
 import {
 	createGlobalStyle,
-	DefaultTheme,
 	ThemeProvider,
 } from "styled-components";
 import { theme } from "../styles/theme";
@@ -35,7 +34,6 @@ function MyApp({ Component, pageProps }) {
 				<title>ACJRHUB - Portfolio do Ac Junior</title>
 			</Head>
 			<ThemeProvider theme={theme}>
-				{" "}
 				<GlobalStyle />
 				<Component {...pageProps} />
 			</ThemeProvider>

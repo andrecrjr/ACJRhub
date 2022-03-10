@@ -1,23 +1,21 @@
 import React from "react";
 import {
-	ContainerPortfolio,
 	PresentationContainer,
-	Presentation,
 } from "../styles";
 import Link from "next/link";
-import {PortfolioList, PortfolioItem, PortfolioItemList} from "./style";
+import {PortfolioContainer, PortfolioList, PortfolioItem, PortfolioItemList, PortfolioPresentation} from "./style";
 
 export const Portfolio: React.FC = () => {
 	return (
-		<ContainerPortfolio id='portfolio'>
+		<PortfolioContainer id='portfolio'>
 			<PresentationContainer hasTitle='true'>
-				<Presentation data-aos='fade-up' data-grid='portfolio-grid'>
+				<PortfolioPresentation data-aos='fade-up'>
 					<div className='portfolio--title'>Portfolio Projects</div>
 					<div className='portfolio--description'>
 						Projects developing for studying purposes about Front-end in
 						general, ReactJS, NextJS, and even Telegram Bots
 					</div>
-				</Presentation>
+				</PortfolioPresentation>
 			</PresentationContainer>
 			<PortfolioList>
 				<Link href='https://spotiflex.vercel.app/' passHref>
@@ -52,6 +50,6 @@ export const Portfolio: React.FC = () => {
 					<p>Coming Soon!</p>
 				</PortfolioItem>
 			</PortfolioList>
-		</ContainerPortfolio>
+		</PortfolioContainer>
 	);
 };

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Container, Presentation } from "../styles"
 
 export const PortfolioList = styled.section`
 	display: flex;
@@ -8,6 +9,29 @@ export const PortfolioList = styled.section`
 	@media (min-width: 767px) {
 		flex-direction: row;
 	}
+`;
+
+export const PortfolioPresentation = styled(Presentation)`
+		.portfolio--title {
+			margin: 15px 0;
+		}
+		.portfolio--description {
+			margin-bottom: 25px;
+		}
+
+		@media (min-width: 767px) {
+			.portfolio--title {
+				margin: 45px 0;
+			}
+			.portfolio--description {
+				margin-bottom: 40px;
+			}
+		}
+`;
+
+export const PortfolioContainer = styled(Container)`
+	padding: 25px 0 20px;
+	background: #404273;
 `;
 
 export const PortfolioItem = styled.a<{bgColor: String}>`
