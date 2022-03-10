@@ -11,9 +11,9 @@ export const AboutMePresentation = styled(Presentation)`
   position:relative;
   padding-left:50px;
   &:not(.title){
-    align-items:flex-start;
-    justify-content:flex-start;
     margin-bottom:5rem;
+    max-width:768px;
+    align-self:center;
   }
   &:not(.title)::before{
     content:"";
@@ -25,17 +25,12 @@ export const AboutMePresentation = styled(Presentation)`
     width:30px;
     height:30px;
     background:black;
+    border: 2px solid white;
   }
   @media (min-width: 767px) {
-    .portfolio--title {
-      margin: 45px 0;
-    }
-    .portfolio--description {
-      margin-bottom: 40px;
-    }
+    margin-top:45px;
     &:not(.title)::before{
-      bottom:15%;
-
+      bottom:25%;
     }
   }
 `
