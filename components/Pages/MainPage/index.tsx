@@ -16,7 +16,7 @@ export default function MainPage({}): ReactElement {
 						<div
 							className='presentation--pic'
 							style={{
-								backgroundImage: `url(${"/img/minime.jpg"})`,
+                backgroundImage: `url(${"/img/image_nerd.jpg"})`,
 							}}
 						></div>
 						<div className='social-network'>
