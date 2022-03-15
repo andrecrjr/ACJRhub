@@ -31,38 +31,47 @@ export const PortfolioPresentation = styled(Presentation)`
 
 export const PortfolioContainer = styled(Container)`
 	padding: 25px 20px;
-	background: #404273;
+	background: #52528d;
 `;
 
-export const PortfolioItem = styled.a<{bgColor: String}>`
+export const PortfolioItem = styled.a`
 	width: 250px;
 	min-height: 150px;
 	margin-bottom: 25px;
 	align-self: center;
-	background: ${(props) => `url("${props.bgColor}")`};
-	background-position: fixed;
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	border-radius: 5%;
+	border-radius: 8%;
 	box-shadow: #333333 0px 3px 14px -4px;
 	text-decoration: none;
-	color: white;
-	display: block;
-	cursor: pointer;
-	text-align: center;
-	transition: width 100ms ease-in, opacity 250ms !important;
-	opacity: 0.6 !important;
-	&:hover {
-		width: 300px;
-		opacity: 1 !important;
-	}
+	display:grid;
+  background:#21174e;
+  h1{
+    font-size:20px;
+    color:white;
+    padding-left:10px;
+  }
 `;
+
+export const PortfolioItemImage = styled.div<{ bgImg: String }>`
+	background: ${(props) => `url("${props.bgImg}")`};
+  background-position: fixed;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+  height:150px;
+  transition:200ms transform ease-in;
+  &:hover{
+     transform:scale(1.3);
+
+  }
+  iframe{
+    text-align:center;
+  }
+`
 
 export const PortfolioItemList = styled.ul`
 	list-style: none;
-	z-index: 1px;
 	li {
-		font-size: 0.85rem;
-		text-shadow: 1px 1px 1px #6062b1;
+		font-size: 0.9rem;
+    padding:5px 25px;
+    color:#eee;
 	}
 `;

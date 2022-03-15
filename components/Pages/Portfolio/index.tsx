@@ -3,7 +3,7 @@ import {
 	PresentationContainer,
 } from "../styles";
 import Link from "next/link";
-import {PortfolioContainer, PortfolioList, PortfolioItem, PortfolioItemList, PortfolioPresentation} from "./style";
+import {PortfolioContainer, PortfolioList, PortfolioItem, PortfolioItemList, PortfolioPresentation, PortfolioItemImage} from "./style";
 
 export const Portfolio: React.FC = () => {
 	return (
@@ -16,11 +16,13 @@ export const Portfolio: React.FC = () => {
 					</div>
 				</PortfolioPresentation>
 			<PortfolioList data-aos='fade-up'>
-				<Link href='https://spotiflex.vercel.app/' passHref>
+        <Link href='https://spotiflex.vercel.app/' passHref>
 					<PortfolioItem
 						target='_blank'
-						bgColor='/img/spotiflex.png'
-					>
+          >
+          <PortfolioItemImage
+              bgImg='/img/spotiflex.png'>
+          </PortfolioItemImage>
 						<h1>Spotiflex</h1>
 						<PortfolioItemList>
 							<li>Nextjs</li>
@@ -33,8 +35,10 @@ export const Portfolio: React.FC = () => {
 					<PortfolioItem
 						data-aos='fade-up'
 						target='_blank'
-						bgColor='/img/animebonds.png'
-					>
+          >
+            <PortfolioItemImage
+              bgImg='/img/animebonds.png'>
+               </PortfolioItemImage>
 						<h1>Animebonds</h1>
 						<PortfolioItemList>
 							<li>Create React App</li>
@@ -43,7 +47,7 @@ export const Portfolio: React.FC = () => {
 						</PortfolioItemList>
 					</PortfolioItem>
 				</Link>
-				<PortfolioItem bgColor={""} data-aos='fade-up'>
+				<PortfolioItem data-aos='fade-up'>
 					<p>Coming Soon!</p>
 				</PortfolioItem>
 			</PortfolioList>
