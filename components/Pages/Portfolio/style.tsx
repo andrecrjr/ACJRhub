@@ -30,7 +30,7 @@ export const PortfolioPresentation = styled(Presentation)`
 `;
 
 export const PortfolioContainer = styled(Container)`
-	padding: 25px 0 20px;
+	padding: 25px 20px;
 	background: #404273;
 `;
 

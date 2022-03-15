@@ -8,7 +8,6 @@ import {PortfolioContainer, PortfolioList, PortfolioItem, PortfolioItemList, Por
 export const Portfolio: React.FC = () => {
 	return (
 		<PortfolioContainer id='portfolio'>
-			<PresentationContainer hasTitle='true'>
 				<PortfolioPresentation data-aos='fade-up'>
 					<div className='portfolio--title'>Portfolio Projects</div>
 					<div className='portfolio--description'>
@@ -16,11 +15,9 @@ export const Portfolio: React.FC = () => {
 						general, ReactJS, NextJS, and even Telegram Bots
 					</div>
 				</PortfolioPresentation>
-			</PresentationContainer>
-			<PortfolioList>
+			<PortfolioList data-aos='fade-up'>
 				<Link href='https://spotiflex.vercel.app/' passHref>
 					<PortfolioItem
-						data-aos='fade-up'
 						target='_blank'
 						bgColor='/img/spotiflex.png'
 					>

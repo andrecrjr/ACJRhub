@@ -92,7 +92,7 @@ export const Presentation = styled.div<{ row?: String }>`
 	}
 
 	.presentation--my-stacks {
-		margin-top: 35px;
+		margin-top: 10%;
 		display: flex;
 		flex-direction: column;
 

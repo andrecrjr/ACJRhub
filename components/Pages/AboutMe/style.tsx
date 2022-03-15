@@ -3,7 +3,8 @@ import styled from "styled-components";
 import {Presentation} from "../styles";
 
 export const AboutMeContainer = styled(Container)`
-	background-color: #366186;
+	background: #366186;
+  overflow:hidden;
 `;
 
 export const AboutMePresentation = styled(Presentation)`
@@ -24,8 +25,8 @@ export const AboutMePresentation = styled(Presentation)`
     border-radius:100%;
     width:30px;
     height:30px;
-    background:black;
     border: 2px solid white;
+    animation: 200ms spin;
   }
   @media (min-width: 767px) {
     margin-top:45px;
@@ -33,4 +34,8 @@ export const AboutMePresentation = styled(Presentation)`
       bottom:25%;
     }
   }
+  @keyframes spin {
+    from {transform:translate(20px);}
+    to {transform:translateY(25px);}
+}
 `

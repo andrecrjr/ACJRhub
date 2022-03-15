@@ -11,7 +11,7 @@ export const AboutMe = () => {
 			<AboutMePresentation>
 				<p data-aos='fade-left'>
 					System Analyst graduated in Bachelor of Information System, working as
-					Fullstack Developer in the last 3 years, but now want to focus in{" "}
+					Fullstack Developer in the last {(new Date()).getFullYear() - 2018} years, but always on focus into{" "}
 					<span className='bold-mark'>Front End</span>.
 				</p>
 			</AboutMePresentation>
