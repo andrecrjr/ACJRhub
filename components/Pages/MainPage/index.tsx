@@ -1,7 +1,7 @@
-import React, { ReactElement } from "react";
-import { Container, PresentationContainer, Presentation } from "../styles";
-import { SocialNetwork } from "../../Layout/SocialNetwork";
-import { Stacks } from "../../Layout/Stacks";
+import React, {ReactElement} from "react";
+import {Container, PresentationContainer, Presentation} from "../styles";
+import {SocialNetwork} from "../../Layout/SocialNetwork";
+import {Stacks} from "../../Layout/Stacks";
 
 export default function MainPage({}): ReactElement {
 	return (
@@ -16,7 +16,7 @@ export default function MainPage({}): ReactElement {
 						<div
 							className='presentation--pic'
 							style={{
-                backgroundImage: `url(${"/img/image_nerd.jpg"})`,
+								backgroundImage: `url(${"/img/image_nerd.jpg"})`,
 							}}
 						></div>
 						<div className='social-network'>

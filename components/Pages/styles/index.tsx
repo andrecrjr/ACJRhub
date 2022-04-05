@@ -8,7 +8,7 @@ export const Container = styled.section`
 	flex-direction: column;
 `;
 
-export const PresentationContainer = styled.div<{ hasTitle?: String }>`
+export const PresentationContainer = styled.div<{hasTitle?: String}>`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -50,7 +50,7 @@ export const PresentationContainer = styled.div<{ hasTitle?: String }>`
 	}
 `;
 
-export const Presentation = styled.div<{ row?: String }>`
+export const Presentation = styled.div<{row?: String}>`
 	color: ${(props) => props.theme.colors.primary};
 	display: flex;
 	justify-content: center;

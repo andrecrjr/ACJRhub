@@ -1,17 +1,21 @@
 import React from "react";
-import { AboutMeContainer, AboutMePresentation } from "./style";
-import { PresentationContainer, Presentation,  } from "../styles";
+import {
+	AboutMeContainer,
+	AboutMePresentation,
+	AboutMePresentationContainer,
+} from "./style";
 
 export const AboutMe = () => {
 	return (
 		<AboutMeContainer id='about-me'>
-			<PresentationContainer>
-				<AboutMePresentation className="title">About me!</AboutMePresentation>
-			</PresentationContainer>
+			<AboutMePresentationContainer>
+				<AboutMePresentation className='title'>About me!</AboutMePresentation>
+			</AboutMePresentationContainer>
 			<AboutMePresentation>
 				<p data-aos='fade-left'>
 					System Analyst graduated in Bachelor of Information System, working as
-					Fullstack Developer in the last {(new Date()).getFullYear() - 2018} years, but always on focus into{" "}
+					Fullstack Developer in the last {new Date().getFullYear() - 2018}{" "}
+					years, but always on focus into{" "}
 					<span className='bold-mark'>Front End</span>.
 				</p>
 			</AboutMePresentation>
