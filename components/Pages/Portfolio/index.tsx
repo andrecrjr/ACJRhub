@@ -47,6 +47,7 @@ export const Portfolio: React.FC = () => {
 				<PortfolioItem>
 				<PortfolioItemImage bgImg='/img/unfinished.jpg'/>
 					<PortfolioSoon style={{padding:"15px"}}>More coming soon!</PortfolioSoon>
+					<PortfolioSoon style={{padding:"15px"}}>You can check my github for some "wip" projects</PortfolioSoon>
 				</PortfolioItem>
 			</PortfolioList>
 		</PortfolioContainer>
