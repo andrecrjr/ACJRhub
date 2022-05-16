@@ -24,7 +24,7 @@ export const Portfolio: React.FC = () => {
 			<PortfolioList data-aos='fade-up'>
 				<Link href='https://spotiflex.vercel.app/' passHref>
 					<PortfolioItem target='_blank'>
-						<PortfolioItemImage bgImg='/img/spotiflex.png'></PortfolioItemImage>
+						<PortfolioItemImage bgImg='/img/spotiflex.png'/>
 						<PortfolioHeader>Spotiflex</PortfolioHeader>
 						<PortfolioItemList>
 							<li>Nextjs</li>
@@ -35,7 +35,7 @@ export const Portfolio: React.FC = () => {
 				</Link>
 				<Link href='https://animebonds.surge.sh/' passHref>
 					<PortfolioItem target='_blank'>
-						<PortfolioItemImage bgImg='/img/animebonds.png'></PortfolioItemImage>
+						<PortfolioItemImage bgImg='/img/animebonds.png'/>
 						<PortfolioHeader>Animebonds</PortfolioHeader>
 						<PortfolioItemList>
 							<li>Create React App</li>
@@ -45,7 +45,8 @@ export const Portfolio: React.FC = () => {
 					</PortfolioItem>
 				</Link>
 				<PortfolioItem>
-					<PortfolioSoon>More coming soon!</PortfolioSoon>
+				<PortfolioItemImage bgImg='/img/unfinished.jpg'/>
+					<PortfolioSoon style={{padding:"15px"}}>More coming soon!</PortfolioSoon>
 				</PortfolioItem>
 			</PortfolioList>
 		</PortfolioContainer>
