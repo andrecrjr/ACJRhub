@@ -27,9 +27,7 @@ export const Portfolio: React.FC = () => {
 						<PortfolioItemImage bgImg='/img/spotiflex.png'/>
 						<PortfolioHeader>Spotiflex</PortfolioHeader>
 						<PortfolioItemList>
-							<li>Nextjs</li>
-							<li>Typescript</li>
-							<li>REST API</li>
+							<li>NextJS - Typescript - REST </li>
 						</PortfolioItemList>
 					</PortfolioItem>
 				</Link>
@@ -38,9 +36,7 @@ export const Portfolio: React.FC = () => {
 						<PortfolioItemImage bgImg='/img/animebonds.png'/>
 						<PortfolioHeader>Animebonds</PortfolioHeader>
 						<PortfolioItemList>
-							<li>Create React App</li>
-							<li>Javascript</li>
-							<li>Apollo Graphql</li>
+							<li>React - Javascript - Apollo Graphql</li>
 						</PortfolioItemList>
 					</PortfolioItem>
 				</Link>

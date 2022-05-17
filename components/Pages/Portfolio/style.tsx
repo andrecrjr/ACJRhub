@@ -37,7 +37,7 @@ export const PortfolioContainer = styled(Container)`
 export const PortfolioHeader = styled.h2`
 	font-size: 0.9rem;
 	color: white;
-	padding-left: 10px;
+	padding-left: 16px;
 `;
 
 export const PortfolioItem = styled.a`
@@ -72,7 +72,7 @@ export const PortfolioItemList = styled.ul`
 	list-style: none;
 	li {
 		font-size: 0.77rem;
-		padding: 5px 12px;
+		padding: 10px 16px;
 		color: #eee;
 	}
 `;
