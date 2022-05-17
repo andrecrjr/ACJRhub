@@ -21,14 +21,14 @@ export const AboutMe = () => {
 			</AboutMePresentation>
 			<AboutMePresentation>
 				<p data-aos='fade-left'>
-					Fell in love in Blockchains and Cryptocurrency in general, fascinated
-					by the power in a future Web 3.0
+					Fell in love in Blockchains and Cryptocurrencies in general, fascinated
+					by the decentralized power in a future Web 3.0!
 				</p>
 			</AboutMePresentation>
 			<AboutMePresentation>
 				<p data-aos='fade-left'>
-					I love to watch animes and read some mangas as my favorite passtime,
-					and of course playing some games a lot!
+					I love to watch Animes and read some Mangas, it's my favorite passtimes,
+					and of course playing games a lot, like Terraria!
 				</p>
 			</AboutMePresentation>
 		</AboutMeContainer>

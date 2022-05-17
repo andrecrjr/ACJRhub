@@ -40,6 +40,15 @@ export const Portfolio: React.FC = () => {
 						</PortfolioItemList>
 					</PortfolioItem>
 				</Link>
+				<Link href='https://cryptomonkey-sticker-book.surge.sh/' passHref>
+					<PortfolioItem target='_blank'>
+						<PortfolioItemImage bgImg='/img/projects/nftstickerbook.png'/>
+						<PortfolioHeader>NFT Sticker Book</PortfolioHeader>
+						<PortfolioItemList>
+							<li>React - Javascript - REST API - NFT - Blockchain</li>
+						</PortfolioItemList>
+					</PortfolioItem>
+				</Link>
 				<PortfolioItem>
 				<PortfolioItemImage bgImg='/img/unfinished.jpg'/>
 					<PortfolioSoon style={{padding:'15px'}}>More coming soon!</PortfolioSoon>

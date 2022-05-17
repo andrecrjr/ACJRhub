@@ -4,8 +4,8 @@ import {Container, Presentation} from "../styles";
 export const PortfolioList = styled.section`
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: space-evenly;
+	flex-wrap:wrap;
 	@media (min-width: 767px) {
 		flex-direction: row;
 	}
