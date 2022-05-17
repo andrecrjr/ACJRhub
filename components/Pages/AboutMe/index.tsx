@@ -27,7 +27,7 @@ export const AboutMe = () => {
 			</AboutMePresentation>
 			<AboutMePresentation>
 				<p data-aos='fade-left'>
-					I love to watch Animes and read some Mangas, it's my favorite passtimes,
+					I love to watch Animes and read some Mangas, that&apos;s my favorite passtime,
 					and of course playing games a lot, like Terraria!
 				</p>
 			</AboutMePresentation>
