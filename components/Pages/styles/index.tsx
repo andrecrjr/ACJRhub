@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.section`
 	background-color: ${(props) => props.theme.colors.backgroundPrimary};
@@ -8,12 +8,12 @@ export const Container = styled.section`
 	flex-direction: column;
 `;
 
-export const PresentationContainer = styled.div<{hasTitle?: String}>`
+export const PresentationContainer = styled.div<{ hasTitle?: String }>`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding-left: ${(props) => (props.hasTitle === "true" ? "15px" : "0")};
-	[data-grid="welcome-grid"] {
+	padding-left: ${(props) => (props.hasTitle === 'true' ? '15px' : '0')};
+	[data-grid='welcome-grid'] {
 		margin-top: 60px;
 		@media (min-width: 767px) {
 			display: grid;
@@ -50,11 +50,11 @@ export const PresentationContainer = styled.div<{hasTitle?: String}>`
 	}
 `;
 
-export const Presentation = styled.div<{row?: String}>`
+export const Presentation = styled.div<{ row?: String }>`
 	color: ${(props) => props.theme.colors.primary};
 	display: flex;
 	justify-content: center;
-	flex-direction: ${(props) => (props.row ? "row" : "column")};
+	flex-direction: ${(props) => (props.row ? 'row' : 'column')};
 	align-items: center;
 	.bold-mark {
 		font-weight: bold;

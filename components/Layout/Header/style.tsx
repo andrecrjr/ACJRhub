@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const MenuLink = styled.div`
 	text-decoration: none;
@@ -42,4 +42,3 @@ export const GlobalHeader = styled.header`
 		}
 	}
 `;
-

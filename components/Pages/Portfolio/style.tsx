@@ -1,11 +1,11 @@
-import styled from "styled-components";
-import {Container, Presentation} from "../styles";
+import styled from 'styled-components';
+import { Container, Presentation } from '../styles';
 
 export const PortfolioList = styled.section`
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	flex-wrap:wrap;
+	flex-wrap: wrap;
 	@media (min-width: 767px) {
 		flex-direction: row;
 	}
@@ -40,6 +40,10 @@ export const PortfolioHeader = styled.h2`
 	padding-left: 16px;
 `;
 
+export const PortfolioDescription = styled.p`
+	color: 'white';
+`;
+
 export const PortfolioItem = styled.a`
 	width: 250px;
 	min-height: 150px;
@@ -56,7 +60,7 @@ export const PortfolioItem = styled.a`
 	}
 `;
 
-export const PortfolioItemImage = styled.div<{bgImg: String}>`
+export const PortfolioItemImage = styled.div<{ bgImg: String }>`
 	background: ${(props) => `url("${props.bgImg}")`};
 	background-position: fixed;
 	background-size: 100% 100%;
