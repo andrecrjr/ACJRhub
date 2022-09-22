@@ -8,9 +8,12 @@ import {
 	PortfolioPresentation,
 	PortfolioItemImage,
 	PortfolioHeader,
-	PortfolioSoon,
-	PortfolioDescription
+	PortfolioDescriptionContainer,
+	PortfolioDescription,
+	PortfolioSoon
 } from './style';
+
+import PortfolioData from './Portfolio.json';
 
 export const Portfolio: React.FC = () => {
 	return (
@@ -23,36 +26,26 @@ export const Portfolio: React.FC = () => {
 				</div>
 			</PortfolioPresentation>
 			<PortfolioList data-aos="fade-up">
-				<Link href="https://spotiflex.vercel.app/" passHref>
-					<PortfolioItem target="_blank">
-						<PortfolioItemImage bgImg="/img/spotiflex.png" />
-						<PortfolioHeader>Spotiflex</PortfolioHeader>
-						<PortfolioDescription>
-							This project consumes Spotify API
-						</PortfolioDescription>
-						<PortfolioItemList>
-							<li>NextJS - Typescript - REST </li>
-						</PortfolioItemList>
-					</PortfolioItem>
-				</Link>
-				<Link href="https://animebonds.surge.sh/" passHref>
-					<PortfolioItem target="_blank">
-						<PortfolioItemImage bgImg="/img/animebonds.png" />
-						<PortfolioHeader>Animebonds</PortfolioHeader>
-						<PortfolioItemList>
-							<li>React - Javascript - Apollo Graphql</li>
-						</PortfolioItemList>
-					</PortfolioItem>
-				</Link>
-				<Link href="https://cryptomonkey-sticker-book.surge.sh/" passHref>
-					<PortfolioItem target="_blank">
-						<PortfolioItemImage bgImg="/img/projects/nftstickerbook.png" />
-						<PortfolioHeader>NFT Sticker Book</PortfolioHeader>
-						<PortfolioItemList>
-							<li>React - Javascript - REST API - NFT - Blockchain</li>
-						</PortfolioItemList>
-					</PortfolioItem>
-				</Link>
+				{PortfolioData.map((portfolio, index) => (
+					<Link href="https://spotiflex.vercel.app/" passHref key={index}>
+						<PortfolioItem target="_blank">
+							<PortfolioItemImage bgImg={portfolio.projectImage} />
+							<PortfolioDescriptionContainer>
+								<PortfolioHeader>{portfolio.projectName}</PortfolioHeader>
+								<PortfolioDescription>
+									{portfolio.projectDescription}
+								</PortfolioDescription>
+								<PortfolioItemList>
+									{portfolio.projectTags.map((tag) => (
+										<li key={tag}>{tag}</li>
+									))}
+								</PortfolioItemList>
+							</PortfolioDescriptionContainer>
+						</PortfolioItem>
+					</Link>
+				))}
+			</PortfolioList>
+			<PortfolioList data-aos="fade-up">
 				<PortfolioItem>
 					<PortfolioItemImage bgImg="/img/unfinished.jpg" />
 					<PortfolioSoon style={{ padding: '15px' }}>

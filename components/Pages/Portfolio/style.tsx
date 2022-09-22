@@ -37,7 +37,6 @@ export const PortfolioContainer = styled(Container)`
 export const PortfolioHeader = styled.h2`
 	font-size: 0.9rem;
 	color: white;
-	padding-left: 16px;
 `;
 
 export const PortfolioDescription = styled.p`
@@ -69,16 +68,22 @@ export const PortfolioItemImage = styled.div<{ bgImg: String }>`
 	transition: 200ms transform ease-in;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
-	margin-bottom: 8px;
 `;
 
 export const PortfolioItemList = styled.ul`
 	list-style: none;
 	li {
 		font-size: 0.77rem;
-		padding: 10px 16px;
+		padding: 10px 16px 0 0;
 		color: #eee;
+		display: inline;
 	}
+`;
+
+export const PortfolioDescriptionContainer = styled.section`
+	display: flex;
+	flex-direction: column;
+	padding: 20px 20px 20px 20px;
 `;
 
 export const PortfolioSoon = styled.h3`
