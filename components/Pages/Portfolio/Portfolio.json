@@ -1,13 +1,5 @@
 [
     {
-        "projectName":"Cryptomonkeys Sticker Book",
-        "projectImage":"/img/projects/nftstickerbook.png", 
-        "projectDescription":"", 
-        "projectTags":["React","Javascript","Web3", "WAX Blockchain"],
-        "projectURL":"https://cryptomonkey-sticker-book.surge.sh/",
-        "inProgress":false
-    },
-    {
         "projectName":"Spotiflex",
         "projectImage":"/img/spotiflex.png", 
         "projectDescription":"", 
@@ -21,6 +13,13 @@
         "projectDescription":"", 
         "projectTags":["React","Javascript","Apollo Graphql", "Vite"],
         "projectURL":"https://animebonds.surge.sh/",
+        "inProgress":true
+    },{   
+        "projectName":"Coineko",
+        "projectImage":"", 
+        "projectDescription":"", 
+        "projectTags":["React","Javascript","Rest API", "Vite"],
+        "projectURL":"https://coineko.surge.sh/",
         "inProgress":true
     }
 ]

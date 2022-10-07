@@ -27,7 +27,7 @@ export const Portfolio: React.FC = () => {
 			</PortfolioPresentation>
 			<PortfolioList data-aos="fade-up">
 				{PortfolioData.map((portfolio, index) => (
-					<Link href="https://spotiflex.vercel.app/" passHref key={index}>
+					<Link href={portfolio.projectURL} passHref key={index}>
 						<PortfolioItem target="_blank">
 							<PortfolioItemImage bgImg={portfolio.projectImage} />
 							<PortfolioDescriptionContainer>
