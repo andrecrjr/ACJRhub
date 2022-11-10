@@ -1,13 +1,11 @@
-import {
-	createGlobalStyle,
-	ThemeProvider,
-} from "styled-components";
-import { theme } from "../styles/theme";
-import Head from "next/dist/shared/lib/head";
-import { useEffect } from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { ServerStyleSheet } from "styled-components";
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import { theme } from '../styles/theme';
+import Head from 'next/dist/shared/lib/head';
+import { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { ServerStyleSheet } from 'styled-components';
+import Script from 'next/script';
 
 interface ThemeType {
 	fontFamily: string;
@@ -32,6 +30,19 @@ function MyApp({ Component, pageProps }) {
 		<>
 			<Head>
 				<title>ACJRHUB - Portfolio do Ac Junior</title>
+				<Script
+					src={'https://www.googletagmanager.com/gtag/js?id=G-YCSLXN1PVV'}
+				/>
+				<Script id="google-analytics" strategy="afterInteractive">
+					{`
+						window.dataLayer = window.dataLayer || [];
+						function gtag(){
+							dataLayer.push(arguments);
+						}
+						gtag('js', new Date());
+						gtag('config', 'G-YCSLXN1PVV');
+						`}
+				</Script>
 			</Head>
 			<ThemeProvider theme={theme}>
 				<GlobalStyle />
