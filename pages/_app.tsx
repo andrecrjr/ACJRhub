@@ -30,20 +30,22 @@ function MyApp({ Component, pageProps }) {
 		<>
 			<Head>
 				<title>ACJRHUB - Portfolio do Ac Junior</title>
-				<Script
-					src={'https://www.googletagmanager.com/gtag/js?id=G-YCSLXN1PVV'}
-				/>
-				<Script id="google-analytics" strategy="afterInteractive">
-					{`
+			</Head>
+			<Script
+				strategy="afterInteractive"
+				async
+				src={'https://www.googletagmanager.com/gtag/js?id=G-YCSLXN1PVV'}
+			/>
+			<Script id="google-analytics" strategy="afterInteractive">
+				{`
 						window.dataLayer = window.dataLayer || [];
 						function gtag(){
 							dataLayer.push(arguments);
 						}
 						gtag('js', new Date());
 						gtag('config', 'G-YCSLXN1PVV');
-						`}
-				</Script>
-			</Head>
+				`}
+			</Script>
 			<ThemeProvider theme={theme}>
 				<GlobalStyle />
 				<Component {...pageProps} />
