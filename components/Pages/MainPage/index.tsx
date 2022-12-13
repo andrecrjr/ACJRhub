@@ -1,12 +1,8 @@
 import React, { ReactElement } from 'react';
-import {
-	Container,
-	PresentationContainer,
-	Presentation,
-	PresentationPic
-} from '../styles';
+import { Container, Presentation, PresentationContainer } from '../styles';
 import { SocialNetwork } from '../../Layout/SocialNetwork';
 import { Stacks } from '../../Layout/Stacks';
+import { PresentationPic } from './style';
 
 export default function MainPage({}): ReactElement {
 	return (
