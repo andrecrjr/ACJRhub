@@ -15,6 +15,7 @@ export const PresentationContainer = styled.div<{ hasTitle?: String }>`
 	padding-left: ${(props) => (props.hasTitle === 'true' ? '15px' : '0')};
 	[data-grid='welcome-grid'] {
 		margin-top: 60px;
+
 		@media (min-width: 767px) {
 			display: grid;
 			width: 100%;
@@ -25,12 +26,6 @@ export const PresentationContainer = styled.div<{ hasTitle?: String }>`
 			.presentation--world {
 				font-size: 40px;
 				text-align: left;
-			}
-			.presentation--pic {
-				width: 225px;
-				height: 280px;
-				background-size: 225px 280px;
-				grid-row: span 2;
 			}
 			.social-network {
 				margin-top: 0;
@@ -47,6 +42,22 @@ export const PresentationContainer = styled.div<{ hasTitle?: String }>`
 				margin-right: 50px;
 			}
 		}
+	}
+`;
+
+export const PresentationPic = styled.div<{ bgImage: string }>`
+	width: 100px;
+	background-image: url(${(props) => props.bgImage});
+	height: 100px;
+	background-size: 100px 100px;
+	border-radius: 25px;
+	background-position: center;
+	background-repeat: no-repeat;
+	@media (min-width: 767px) {
+		width: 250px;
+		height: 280px;
+		background-size: 300px 280px;
+		grid-row: span 2;
 	}
 `;
 
@@ -81,14 +92,6 @@ export const Presentation = styled.div<{ row?: String }>`
 		font-weight: 300;
 		margin-bottom: 25px;
 		text-align: center;
-	}
-
-	.presentation--pic {
-		width: 80px;
-		height: 100px;
-		background-size: 80px 100px;
-		border-radius: 25px;
-		background-position: center;
 	}
 
 	.presentation--my-stacks {

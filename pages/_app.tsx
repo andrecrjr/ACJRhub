@@ -30,6 +30,11 @@ function MyApp({ Component, pageProps }) {
 		<>
 			<Head>
 				<title>ACJRHUB - Portfolio do Ac Junior</title>
+				<meta
+					name="description"
+					content="ACJRHUB is the André Carlos Jr. Portfolio to maintain its portfolio projects and works in Front-end!"
+				/>
+				<meta name="robots" content="index, follow" />
 			</Head>
 			<Script
 				strategy="afterInteractive"

@@ -1,5 +1,10 @@
 import React, { ReactElement } from 'react';
-import { Container, PresentationContainer, Presentation } from '../styles';
+import {
+	Container,
+	PresentationContainer,
+	Presentation,
+	PresentationPic
+} from '../styles';
 import { SocialNetwork } from '../../Layout/SocialNetwork';
 import { Stacks } from '../../Layout/Stacks';
 
@@ -13,12 +18,7 @@ export default function MainPage({}): ReactElement {
 							<strong>Hello world</strong>
 							<br /> I am André Junior!
 						</h2>
-						<div
-							className="presentation--pic"
-							style={{
-								backgroundImage: `url(${'/img/nerd-2.jpg'})`
-							}}
-						></div>
+						<PresentationPic bgImage="https://media-exp1.licdn.com/dms/image/D4D03AQFcNVGkcWebNA/profile-displayphoto-shrink_800_800/0/1670429810926?e=1676505600&v=beta&t=LoaxT4Z86vjnq4fsbFEh6EpcZQC1S1b8C9PLSAZAuwI" />
 						<div className="social-network">
 							<SocialNetwork
 								socialNetworkHref={'linkedin.com/in/andrecrjr'}
