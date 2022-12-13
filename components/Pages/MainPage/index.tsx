@@ -2,7 +2,11 @@ import React, { ReactElement } from 'react';
 import { Container, Presentation, PresentationContainer } from '../styles';
 import { SocialNetwork } from '../../Layout/SocialNetwork';
 import { Stacks } from '../../Layout/Stacks';
-import { PresentationPic } from './style';
+import {
+	MyStackContainer,
+	PresentationPic,
+	SocialNetworkContainer
+} from './style';
 
 export default function MainPage({}): ReactElement {
 	return (
@@ -15,32 +19,40 @@ export default function MainPage({}): ReactElement {
 							<br /> I am André Junior!
 						</h2>
 						<PresentationPic bgImage="https://media-exp1.licdn.com/dms/image/D4D03AQFcNVGkcWebNA/profile-displayphoto-shrink_800_800/0/1670429810926?e=1676505600&v=beta&t=LoaxT4Z86vjnq4fsbFEh6EpcZQC1S1b8C9PLSAZAuwI" />
-						<div className="social-network">
-							<SocialNetwork
-								socialNetworkHref={'linkedin.com/in/andrecrjr'}
-								socialNetworkName={'linkedin'}
-							/>
-							<SocialNetwork
-								socialNetworkHref={'instagr.am/andrecrjr'}
-								socialNetworkName={'insta'}
-							/>
-							<SocialNetwork
-								socialNetworkHref={'twitter.com/acjuni0r'}
-								socialNetworkName={'twitter'}
-							/>
-							<SocialNetwork
-								socialNetworkHref={'github.com/andrecrjr'}
-								socialNetworkName={'github'}
-							/>
-						</div>
+						<SocialNetworkContainer>
+							<li>
+								<SocialNetwork
+									socialNetworkHref={'linkedin.com/in/andrecrjr'}
+									socialNetworkName={'linkedin'}
+								/>
+							</li>
+							<li>
+								<SocialNetwork
+									socialNetworkHref={'instagr.am/andrecrjr'}
+									socialNetworkName={'insta'}
+								/>
+							</li>
+							<li>
+								<SocialNetwork
+									socialNetworkHref={'twitter.com/acjuni0r'}
+									socialNetworkName={'twitter'}
+								/>
+							</li>
+							<li>
+								<SocialNetwork
+									socialNetworkHref={'github.com/andrecrjr'}
+									socialNetworkName={'github'}
+								/>
+							</li>
+						</SocialNetworkContainer>
 					</Presentation>
 					<Presentation data-aos="fade-up">
-						<div className="presentation--my-stacks">
-							<h1 className="presentation--world">
+						<MyStackContainer>
+							<h2 className="presentation--world">
 								Fullstack Developer focusing in Front-end Development
-							</h1>
+							</h2>
 							<Stacks />
-						</div>
+						</MyStackContainer>
 					</Presentation>
 				</PresentationContainer>
 			</Container>

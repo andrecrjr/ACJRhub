@@ -51,13 +51,5 @@ export const SocialNetwork = (props: Props) => {
 		);
 	};
 
-	return (
-		<a
-			href={`https://${props.socialNetworkHref}`}
-			target="_blank"
-			rel="noreferrer"
-		>
-			{IconRender()}
-		</a>
-	);
+	return <a href={`https://${props.socialNetworkHref}`}>{IconRender()}</a>;
 };

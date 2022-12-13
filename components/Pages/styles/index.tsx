@@ -55,21 +55,6 @@ export const Presentation = styled.div<{ row?: String }>`
 		font-weight: bold;
 		display: inline;
 	}
-	.social-network {
-		display: flex;
-		justify-content: row;
-		margin-top: 50px;
-		a {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 40px;
-			margin-right: 20px;
-			&:last-child {
-				margin-right: 0;
-			}
-		}
-	}
 
 	.presentation--world {
 		font-size: 25px;
@@ -78,22 +63,4 @@ export const Presentation = styled.div<{ row?: String }>`
 		text-align: center;
 	}
 
-	.presentation--my-stacks {
-		margin-top: 10%;
-		display: flex;
-		flex-direction: column;
-
-		svg {
-			width: 40px;
-			height: 40px;
-			align-self: center;
-			margin-right: 40px;
-			&:last-child {
-				margin-right: 0;
-			}
-		}
-	}
-	.presentation--techstacks {
-		margin: 0 auto;
-	}
 `;
