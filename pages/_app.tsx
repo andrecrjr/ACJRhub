@@ -13,18 +13,25 @@ interface ThemeType {
 
 const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
 *{
- margin:0;
- padding:0;
+	margin:0;
+	padding:0;
 }
 
 body{
 	font-family: ${(props) => props.theme.fontFamily};
 }
+
+a{
+	&:hover{
+		transform:scale(150%);
+		transition:transform 200ms linear;
+	}
+}
 `;
 
 function MyApp({ Component, pageProps }) {
 	useEffect(() => {
-		Aos.init({ duration: 1600 });
+		Aos.init({ duration: 1500 });
 	}, []);
 	return (
 		<>

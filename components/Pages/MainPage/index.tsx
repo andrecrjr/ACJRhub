@@ -15,10 +15,9 @@ export default function MainPage({}): ReactElement {
 				<PresentationContainer>
 					<Presentation data-grid="welcome-grid" data-aos="fade-up">
 						<h2 className="presentation--world">
-							<strong>Hello world</strong>
-							<br /> I am André Junior!
+							Hello World, I am <strong>André Junior</strong>
 						</h2>
-						<PresentationPic bgImage="https://media-exp1.licdn.com/dms/image/D4D03AQFcNVGkcWebNA/profile-displayphoto-shrink_800_800/0/1670429810926?e=1676505600&v=beta&t=LoaxT4Z86vjnq4fsbFEh6EpcZQC1S1b8C9PLSAZAuwI" />
+
 						<SocialNetworkContainer>
 							<li>
 								<SocialNetwork
@@ -46,10 +45,10 @@ export default function MainPage({}): ReactElement {
 							</li>
 						</SocialNetworkContainer>
 					</Presentation>
-					<Presentation data-aos="fade-up">
+					<Presentation data-grid="stack-grid" data-aos="fade-up">
 						<MyStackContainer>
 							<h2 className="presentation--world">
-								Fullstack Developer focusing in Front-end Development
+								Front-end Developer and NodeJS Lover!
 							</h2>
 							<Stacks />
 						</MyStackContainer>

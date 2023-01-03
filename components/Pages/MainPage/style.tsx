@@ -18,9 +18,10 @@ export const PresentationPic = styled.div<{ bgImage: string }>`
 
 export const SocialNetworkContainer = styled.ul`
 	display: flex;
-	justify-content: row;
-	margin-top: 50px;
+	justify-content: center;
+	margin-top: 80px;
 	list-style: none;
+
 	li,
 	a {
 		display: flex;
@@ -35,15 +36,18 @@ export const SocialNetworkContainer = styled.ul`
 `;
 
 export const MyStackContainer = styled.div`
-	margin-top: 10%;
 	display: flex;
 	flex-direction: column;
+	margin-top: auto;
+`;
 
-	svg {
-		width: 40px;
-		height: 40px;
-		align-self: center;
-		margin-right: 40px;
+export const PresentationTechStack = styled.div`
+	margin-right: 15px;
+	display: flex;
+	align-self: center;
+	a {
+		width: 3rem;
+		margin-right: 20px;
 		&:last-child {
 			margin-right: 0;
 		}

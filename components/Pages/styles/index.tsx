@@ -13,23 +13,71 @@ export const PresentationContainer = styled.div<{ hasTitle?: String }>`
 	flex-direction: column;
 	justify-content: center;
 	padding-left: ${(props) => (props.hasTitle === 'true' ? '15px' : '0')};
+	height: 100vh;
+
+	[data-grid='stack-grid'] {
+		margin-top: 70px;
+	}
+
 	[data-grid='welcome-grid'] {
-		margin-top: 60px;
+		margin-top: 50px;
+		.presentation--world {
+			&:after {
+				content: '';
+				right: -15px;
+				/* Remove display: inline-block if not required to be on the same line as text etc */
+				display: inline-block;
+				background-color: #d4d4d4;
+				width: 10px;
+				/* Set height to the line height of .text */
+				height: 20px;
+				margin-left: 10px;
+				-webkit-animation: blink 1s step-end infinite;
+				animation: blink 1s step-end infinite;
+			}
+			@-webkit-keyframes blink {
+				0% {
+					opacity: 1;
+				}
+				50% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+
+			@keyframes blink {
+				0% {
+					opacity: 1;
+				}
+				50% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+		}
 
 		@media (min-width: 767px) {
 			display: grid;
 			width: 100%;
 			height: auto;
-			grid-template-columns: ${(props) => props.theme.gridWelcome};
-			grid-template-rows: auto auto;
-			margin: 70px 0 0 0;
+			grid-template-columns: auto;
+			grid-template-rows: auto;
+			margin: 125px 0 0 0;
 			.presentation--world {
 				font-size: 40px;
 				text-align: left;
+				positioon: relative;
+				&:after {
+					height: 30px;
+				}
 			}
 			.social-network {
 				margin-top: 0;
-				margin-right: 40px;
+				margin-right: 80px;
 				a {
 					width: 55px;
 				}
@@ -39,7 +87,6 @@ export const PresentationContainer = styled.div<{ hasTitle?: String }>`
 			.presentation--world {
 				font-size: 45px;
 				text-align: left;
-				margin-right: 50px;
 			}
 		}
 	}
@@ -62,5 +109,4 @@ export const Presentation = styled.div<{ row?: String }>`
 		margin-bottom: 25px;
 		text-align: center;
 	}
-
 `;
