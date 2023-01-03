@@ -13,7 +13,6 @@ export const PresentationContainer = styled.div<{ hasTitle?: String }>`
 	flex-direction: column;
 	justify-content: center;
 	padding-left: ${(props) => (props.hasTitle === 'true' ? '15px' : '0')};
-	height: 100vh;
 
 	[data-grid='stack-grid'] {
 		margin-top: 70px;
