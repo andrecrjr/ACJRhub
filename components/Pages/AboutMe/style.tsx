@@ -1,6 +1,6 @@
-import {Container, PresentationContainer} from "../styles";
-import styled from "styled-components";
-import {Presentation} from "../styles";
+import { Container, PresentationContainer } from '../styles';
+import styled from 'styled-components';
+import { Presentation } from '../styles';
 
 export const AboutMeContainer = styled(Container)`
 	background: #366186;
@@ -17,29 +17,21 @@ export const AboutMePresentation = styled(Presentation)`
 		align-self: center;
 	}
 	&:not(.title)::before {
-		content: "";
+		content: '';
 		position: absolute;
-		bottom: 50%;
+		bottom: 45%;
 		left: 0;
 		display: block;
 		border-radius: 100%;
-		width: 30px;
-		height: 30px;
-		border: 2px solid white;
+		width: 25px;
+		height: 25px;
+		background: white;
 		animation: 200ms spin;
 	}
 	@media (min-width: 767px) {
 		margin-top: 45px;
 		&:not(.title)::before {
 			bottom: 25%;
-		}
-	}
-	@keyframes spin {
-		from {
-			transform: translate(20px);
-		}
-		to {
-			transform: translateY(25px);
 		}
 	}
 `;

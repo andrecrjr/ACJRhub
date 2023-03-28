@@ -4,6 +4,7 @@ import {
 	AboutMePresentation,
 	AboutMePresentationContainer
 } from './style';
+import Aboutme from './AboutMe.json';
 
 export const AboutMe = () => {
 	return (
@@ -11,26 +12,13 @@ export const AboutMe = () => {
 			<AboutMePresentationContainer>
 				<AboutMePresentation className="title">About me!</AboutMePresentation>
 			</AboutMePresentationContainer>
-			<AboutMePresentation>
-				<p data-aos="fade-left">
-					System Analyst graduated in Bachelor of Information System, working as
-					Fullstack Developer in the last {new Date().getFullYear() - 2018}{' '}
-					years, but always on focus into{' '}
-					<span className="bold-mark">Front End</span>.
-				</p>
-			</AboutMePresentation>
-			<AboutMePresentation>
-				<p data-aos="fade-left">
-					Fell in love in Blockchains and Cryptocurrencies in general,
-					fascinated by the decentralized power in a future Web 3.0!
-				</p>
-			</AboutMePresentation>
-			<AboutMePresentation>
-				<p data-aos="fade-left">
-					I love to watch Animes and read some Mangas, that&apos;s my favorite
-					passtime, and of course playing games a lot, like Terraria!
-				</p>
-			</AboutMePresentation>
+			{Aboutme.map((item, index) => {
+				return (
+					<AboutMePresentation key={index}>
+						<p data-aos="fade-left">{item.description}</p>
+					</AboutMePresentation>
+				);
+			})}
 		</AboutMeContainer>
 	);
 };
