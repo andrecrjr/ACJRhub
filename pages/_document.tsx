@@ -20,6 +20,10 @@ class MyDocument extends Document {
 						href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,400&display=swap"
 						rel="stylesheet"
 					></link>
+					<meta
+						name="google-site-verification"
+						content="google504a726bb71d2ea2"
+					/>
 				</Head>
 				<body>
 					<Main />
