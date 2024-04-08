@@ -1,6 +1,11 @@
+export const fontUrlTheme = {
+	"urlGoogleFont":"https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap",
+	"logoFontCss":"'Nunito Sans', sans-serif"
+}
+
 export const theme = {
-	logoFont: "'Work Sans', sans-serif",
-	fontFamily: "'Work Sans', sans-serif",
+	logoFont: fontUrlTheme.logoFontCss,
+	fontFamily:  fontUrlTheme.logoFontCss,
 	gridWelcome: "465px 235px",
 	gridHeader: "150px 550px",
 	heights: {
@@ -8,6 +13,6 @@ export const theme = {
 	},
 	colors: {
 		primary: "#fafafa",
-		backgroundPrimary: "#2C2D47",
+		backgroundPrimary: "#17171d",
 	},
 };
