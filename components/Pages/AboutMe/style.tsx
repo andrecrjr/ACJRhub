@@ -5,6 +5,9 @@ import { Presentation } from '../styles';
 export const AboutMeContainer = styled(Container)`
 	background: #366186;
 	overflow: hidden;
+	display:grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
 `;
 
 export const AboutMePresentation = styled(Presentation)`
@@ -36,4 +39,7 @@ export const AboutMePresentation = styled(Presentation)`
 	}
 `;
 
-export const AboutMePresentationContainer = styled(PresentationContainer)``;
+export const AboutMePresentationContainer = styled(PresentationContainer)`
+	grid-column-start: 1;
+	grid-column-end:  span 2;
+`;
