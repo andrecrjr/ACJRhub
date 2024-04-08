@@ -33,6 +33,7 @@ function MyApp({ Component, pageProps }) {
 	useEffect(() => {
 		Aos.init({ duration: 1500 });
 	}, []);
+	console.log(process.env.NODE_ENV)
 	return (
 		<>
 			<Head>
@@ -49,7 +50,7 @@ function MyApp({ Component, pageProps }) {
 				src={'https://www.googletagmanager.com/gtag/js?id=G-YCSLXN1PVV'}
 			/>
 			<Script id="google-analytics" strategy="afterInteractive">
-				{`
+				{process.env.NODE_ENV !== "development" && `
 						window.dataLayer = window.dataLayer || [];
 						function gtag(){
 							dataLayer.push(arguments);
