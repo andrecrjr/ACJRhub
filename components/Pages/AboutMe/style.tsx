@@ -3,13 +3,15 @@ import styled from 'styled-components';
 import { Presentation } from '../styles';
 
 export const AboutMeContainer = styled(Container)`
-	background: #366186;
+	background-color: ${(props) => props.theme.colors.backgroundAboutMe};
+	color: white;
 	overflow: hidden;
 	@media screen and (min-width:768px) {		
 		display:grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto 1fr auto;
 		gap: 10px;
+		padding: 0 2.66rem 0 2.66rem;
 	}
 	`;
 

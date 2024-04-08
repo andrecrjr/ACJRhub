@@ -13,6 +13,8 @@ export const theme = {
 	},
 	colors: {
 		primary: "#fafafa",
-		backgroundPrimary: "#17171d",
+		backgroundPrimary: "#1f1f29",
+		backgroundAboutMe: "#212127",
+		backgroundPortfolio: "#151518"
 	},
 };
