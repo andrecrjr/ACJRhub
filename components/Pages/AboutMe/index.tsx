@@ -16,9 +16,7 @@ export const AboutMe = () => {
 			</AboutMePresentationContainer>
 			<Experience/>
 			<Skill />
-			<button>
-				Download my Resumeé
-			</button>
+
 		</AboutMeContainer>
 	);
 };

@@ -42,7 +42,7 @@ export default function MainPage({}): ReactElement {
 					<Presentation data-grid="stack-grid" data-aos="fade-up">
 						<MyStackContainer>
 							<h2 className="presentation--world">
-								Front-end Developer and NodeJS Lover!
+								Front-end Developer, Python-like and geek love 🤓!
 							</h2>
 							<Stacks />
 						</MyStackContainer>

@@ -4,26 +4,44 @@ import { ExperienceSection, ExperienceTitle } from "./Experience.style";
 type Props = {};
 
 const Experience = (props: Props) => {
-  return <ExperienceSection>
+  return <ExperienceSection  data-aos="fade-up">
     <ExperienceTitle>Experiences</ExperienceTitle>
-    
-    <p className="experience__description">
-      As a dedicated Front-End Developer, I specialize in creating user interfaces. My current experience at Editora Globo has allowed me to tackle a variety of projects, enhancing my skills. While focused on Front-End, I’ve also explored Back-End technologies, giving me a comprehensive understanding of web development. This knowledge enables me to quickly adapt to new technologies and eagerly take on fresh challenges.
-    </p>
     <section className="experience__section">
       <h5>FullStack Developer Mid-Level at Editora Globo</h5>
-      <i>2022 / current role</i>
+      <i>2019 / current role</i>
+      <details>
+      <summary>More about my role</summary>
       <ul>
-        <li className="experience__section--paragraph">Legacy System Migration In 2022, I played a pivotal role in migrating three legacy systems to modern content management applications, transitioning from Java 6 and Django 1.4 to a more current stack.</li>
-        <li  className="experience__section--paragraph">Full-Stack Development Employed a robust technology stack, integrating Python and NodeJS microservices, and crafting intricate CMS functionalities using React and Redux-form. My front-end development was enhanced by Sass, HTML, and Vanilla JavaScript.</li>
+        <li className="experience__section--paragraph">
+          Tech Stack Enhancement: Integrated Python and NodeJS microservices, 
+          React with Redux-form, and Sass for 
+          advanced CMS functionalities and front-end development.
+        </li>
+        <li className="experience__section--paragraph">
+          CI/CD Expertise: Gained proficiency in CI/CD pipelines using GitLab CI and GitHub Actions, enhancing the development process.  
+        </li>
+        <li  className="experience__section--paragraph">
+          Agile Methodologies: Demonstrated flexibility in project management by adeptly employing both Scrum and Kanban frameworks.
+        </li>
+        <li className="experience__section--paragraph">
+          SEO Optimization: Leveraged Google Search Console to refine the CMS, boosting search engine visibility and indexing health by over 90%.
+        </li>
+        <li className="experience__section--paragraph">Design Collaboration: Worked closely with UX/UI teams to faithfully execute design specifications using Zeplin, Adobe XD, and Figma.</li>
+        <li className="experience__section--paragraph">Design to Development: Consistently translated design concepts into functional user interfaces, ensuring fidelity to original layouts.</li>
       </ul>
+      </details>
     </section>
     <section className="experience__section">
-      <h5>Front-End Developer Jr. at Editora Globo</h5>
-      <i>2019 / 2022</i>
+      <h5>Web Developer Trainee at Editora Globo</h5>
+      <i>2018 / 2019</i>
+      <details>
+       <summary>More about my role</summary>
       <ul>
-        <li></li>
+        <li className="experience__section--paragraph">Legacy System Revitalization: Enhanced legacy systems using Django and Python 2.7, acquiring expertise in established technologies.</li>
+        <li className="experience__section--paragraph">Front-End Leadership: Led the creation of user interfaces with Less and Vanilla Javascript, merging practicality with aesthetic design.</li>
+        <li className="experience__section--paragraph">Technological Adaptability: Overcame the intricacies of older tech stacks, mastering Django, Python 2.7, Less, and Vanilla Javascript.</li>
       </ul>
+      </details>
     </section>
   </ExperienceSection>;
 };

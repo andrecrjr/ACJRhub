@@ -21,7 +21,7 @@
         "projectImage":"", 
         "projectDescription":"", 
         "projectTags":["React","Javascript","Rest API", "Vite"],
-        "projectURL":"https://coineko.surge.sh/",
+        "projectURL":"https://coineko.vercel.app/",
         "githubUrl":"",
         "inProgress":true
     }

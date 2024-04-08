@@ -5,16 +5,20 @@ export const ExperienceSection = styled.section`
     width:"100%";
     
     .experience__description{
-        font-size: 1.2rem;        
+        font-size: 1rem;        
     }
 
     .experience__section{
         margin-top:0.9rem;
         h5{
-            font-size: 1.4rem;
+            font-size: 1.25rem;
         }
-        li.experience__section--paragraph{
+        ul{
+            padding-left:1.3rem;
+        }
+        .experience__section--paragraph{
              font-size: 1.1rem;
+             margin-top: 0.8rem;
         }
     }
 `
