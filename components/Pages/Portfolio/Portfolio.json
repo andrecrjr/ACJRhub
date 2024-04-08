@@ -5,6 +5,7 @@
         "projectDescription":"", 
         "projectTags":["NextJS","Typescript", "Rest API"],
         "projectURL":"https://spotiflex.vercel.app/",
+        "githubUrl":"",
         "inProgress":true
     },
     {   
@@ -13,6 +14,7 @@
         "projectDescription":"", 
         "projectTags":["React","Javascript","Apollo Graphql", "Vite"],
         "projectURL":"https://animebonds.surge.sh/",
+        "githubUrl":"",
         "inProgress":true
     },{   
         "projectName":"Coineko",
@@ -20,6 +22,7 @@
         "projectDescription":"", 
         "projectTags":["React","Javascript","Rest API", "Vite"],
         "projectURL":"https://coineko.surge.sh/",
+        "githubUrl":"",
         "inProgress":true
     }
 ]

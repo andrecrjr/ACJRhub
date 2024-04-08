@@ -49,10 +49,9 @@ export const PortfolioItem = styled.a`
 	margin-bottom: 25px;
 	align-self: center;
 	border-radius: 8%;
-	box-shadow: #333333 0px 3px 14px -4px;
+	box-shadow: #2e2e2e 0px 3px 14px -8px;
 	text-decoration: none;
 	display: grid;
-	background: #21174e;
 	transition: transform 100ms linear;
 	&:hover {
 		transform: scale(1.1) !important;

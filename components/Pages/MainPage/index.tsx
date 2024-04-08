@@ -33,12 +33,6 @@ export default function MainPage({}): ReactElement {
 							</li>
 							<li>
 								<SocialNetwork
-									socialNetworkHref={'twitter.com/acjuni0r'}
-									socialNetworkName={'twitter'}
-								/>
-							</li>
-							<li>
-								<SocialNetwork
 									socialNetworkHref={'github.com/andrecrjr'}
 									socialNetworkName={'github'}
 								/>
