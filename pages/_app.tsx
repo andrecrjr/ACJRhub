@@ -33,7 +33,6 @@ function MyApp({ Component, pageProps }) {
 	useEffect(() => {
 		Aos.init({ duration: 1500 });
 	}, []);
-	console.log(process.env.NODE_ENV)
 	return (
 		<>
 			<Head>
