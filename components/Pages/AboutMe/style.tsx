@@ -10,8 +10,8 @@ export const AboutMeContainer = styled(Container)`
 		display:grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto 1fr auto;
-		gap: 10px;
-		padding: 0 2.66rem 0 2.66rem;
+		gap: 2rem;
+		padding: 0 6rem 1rem 6rem;
 	}
 	`;
 

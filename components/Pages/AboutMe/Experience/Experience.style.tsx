@@ -3,6 +3,8 @@ import styled from "styled-components";
 
 export const ExperienceSection = styled.section`
     width:"100%";
+    display:flex;
+    flex-direction: column;
     
     .experience__description{
         font-size: 1rem;        
@@ -19,6 +21,24 @@ export const ExperienceSection = styled.section`
         .experience__section--paragraph{
              font-size: 1.1rem;
              margin-top: 0.8rem;
+        }
+    }
+    .experience__section--button{
+        margin-top: 4rem;
+        background:unset;
+        border:2px solid white;
+        color:white;
+        padding:16px;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight:bold;
+        cursor:pointer;
+        display:flex;
+        width:fit-content;
+        text-decoration: none;
+        align-self:center;
+        &:hover{
+            transform: unset;
         }
     }
 `

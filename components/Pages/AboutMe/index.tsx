@@ -12,11 +12,10 @@ export const AboutMe = () => {
 	return (
 		<AboutMeContainer id="about-me">
 			<AboutMePresentationContainer data-aos="fade-up">
-				<AboutMePresentation className="title">About me!</AboutMePresentation>
+				<AboutMePresentation className="title"><h2>About me!</h2></AboutMePresentation>
 			</AboutMePresentationContainer>
 			<Experience/>
 			<Skill />
-
 		</AboutMeContainer>
 	);
 };
