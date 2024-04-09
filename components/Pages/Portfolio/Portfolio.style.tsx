@@ -61,11 +61,11 @@ export const PortfolioItem = styled.section`
 	position:relative;
 	.portfolio--wip{
 		position:absolute;
-		color:green;
+		color:#11d822;
 		z-index:100;
 		font-weight: bold;
 		&.red{
-			color:#770101;
+			color:#929292;
 		}
 	}
 	&:hover {
