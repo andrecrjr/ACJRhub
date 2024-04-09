@@ -11,6 +11,8 @@ export const PortfolioList = styled.section`
 		max-width: 85%;
 		justify-content:center;
 		align-items: center;
+		align-self:center;
+		gap:35px;
 	}
 `;
 
@@ -61,6 +63,10 @@ export const PortfolioItem = styled.section`
 		position:absolute;
 		color:green;
 		z-index:100;
+		font-weight: bold;
+		&.red{
+			color:#770101;
+		}
 	}
 	&:hover {
 		transform: scale(101%);
@@ -77,7 +83,7 @@ export const PortfolioItemImage = styled.div<{ bgImg: String }>`
 	transition: 200ms transform ease-in;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
-	opacity: 0.5;
+	opacity: 0.4;
 `;
 
 export const PortfolioItemList = styled.ul`
@@ -105,4 +111,16 @@ export const PortfolioSoon = styled.h3`
 
 export const PortfolioListButtons = styled.section`
 	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 15px 10px;
+
+	a{
+		text-decoration: none;
+		padding: 0 15px;
+		font-size: 1rem;
+		&:first-child{
+			border-right:3px solid white;
+		}
+	}
 `

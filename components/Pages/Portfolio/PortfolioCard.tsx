@@ -17,7 +17,7 @@ const PortfolioCardsList = () => {
 				{PortfolioData.map((portfolio, index) => (
 						<PortfolioItem key={index}>
 							{portfolio.inProgress && <span className="portfolio--wip" title="This website still being in active development">#WIP</span> || 
-							<span className="portfolio--wip">
+							<span className="portfolio--wip red">
 								Not active development </span>}
 							{portfolio.projectImage && <PortfolioItemImage bgImg={portfolio.projectImage} />}
 							<PortfolioDescriptionContainer>
@@ -25,6 +25,7 @@ const PortfolioCardsList = () => {
 								<PortfolioDescription>
 									{portfolio.projectDescription}
 								</PortfolioDescription>
+								
 								<PortfolioItemList>
 									{portfolio.projectTags.map((tag) => (
 										<li key={tag}>{tag}</li>
@@ -32,18 +33,18 @@ const PortfolioCardsList = () => {
 								</PortfolioItemList>
 							</PortfolioDescriptionContainer>
 							{portfolio.projectURL && (
-								<PortfolioListButtons>
-									<Link href={portfolio.projectURL} passHref>
-										<a>
-										 DEMO
-										</a>
-									</Link>
-									<Link href={portfolio.githubUrl} passHref>
-										<a>
-										Github
-										</a>
-									</Link>
-								</PortfolioListButtons>
+									<PortfolioListButtons>
+										<Link href={portfolio.projectURL} className="button" passHref>
+											<a target="_blank">
+												Live View
+											</a>
+										</Link>
+										<Link href={portfolio.githubUrl} passHref>
+											<a target="_blank">
+												Github
+											</a>
+										</Link>
+									</PortfolioListButtons>
 							)}
 						</PortfolioItem>
 				))}

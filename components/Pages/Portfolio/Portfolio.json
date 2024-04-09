@@ -14,17 +14,17 @@
         "projectDescription":"", 
         "projectTags":["npm","Typescript","NextJS"],
         "projectURL":"https://www.npmjs.com/package/wakatime-next-auth",
-        "githubUrl":"",
+        "githubUrl":"https://github.com/andrecrjr/wakatime-provider-next-auth",
         "inProgress":true
     },
     
     {   
         "projectName":"Coineko",
-        "projectImage":"", 
+        "projectImage":"/img/projects/coineko.png", 
         "projectDescription":"", 
         "projectTags":["React","Javascript","Rest API", "Vite"],
         "projectURL":"https://coineko.vercel.app/",
-        "githubUrl":"",
+        "githubUrl":"https://github.com/andrecrjr/coineko",
         "inProgress":true
     },
     {
@@ -33,7 +33,7 @@
         "projectDescription":"", 
         "projectTags":["NextJS","Typescript", "Rest API"],
         "projectURL":"https://spotiflex.vercel.app/",
-        "githubUrl":"",
+        "githubUrl":"https://github.com/andrecrjr/spotiflex",
         "inProgress":false
     },
     {   
@@ -42,7 +42,7 @@
         "projectDescription":"", 
         "projectTags":["React","Javascript","Apollo Graphql", "Vite"],
         "projectURL":"https://animebonds.surge.sh/",
-        "githubUrl":"",
+        "githubUrl":"https://github.com/andrecrjr/animebonds",
         "inProgress":false
     },
     {   
@@ -51,7 +51,7 @@
         "projectDescription":"", 
         "projectTags":["Javascript", "REST API", "Browser AddOn", "Extension"],
         "projectURL":"https://chrome.google.com/webstore/detail/bananominer-watch/pdnkikfbjfhikkpopfoaihhfbhaplpfc",
-        "githubUrl":"",
+        "githubUrl":"https://github.com/andrecrjr/bananominer-watch",
         "inProgress":false
     }
 ]
