@@ -15,7 +15,7 @@ export default function MainPage({}): ReactElement {
 				<PresentationContainer>
 					<Presentation data-grid="welcome-grid" data-aos="fade-up">
 						<h2 className="presentation--world">
-							Hello World, I am <strong>André Junior</strong>
+							Hello World, I am <strong>André Carlos Junior</strong>
 						</h2>
 
 						<SocialNetworkContainer>

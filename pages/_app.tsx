@@ -4,7 +4,6 @@ import Head from 'next/dist/shared/lib/head';
 import { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import { ServerStyleSheet } from 'styled-components';
 import Script from 'next/script';
 
 interface ThemeType {
@@ -53,7 +52,7 @@ function MyApp({ Component, pageProps }) {
 				<title>ACJRHUB - Portfolio do Ac Junior</title>
 				<meta
 					name="description"
-					content="ACJRHUB is the André Carlos Jr. Portfolio to maintain its portfolio projects and works in Front-end!"
+					content="ACJRHUB is the André Carlos Jr. Portfolio to maintain its portfolio projects and works in Front-end development!"
 				/>
 				<meta name="robots" content="index, follow" />
 			</Head>
