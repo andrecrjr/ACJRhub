@@ -3,8 +3,7 @@ import {
 	AboutMeContainer,
 	AboutMePresentation,
 	AboutMePresentationContainer
-} from './style';
-import Aboutme from './AboutMe.json';
+} from './About.style';
 import Skill from './Skill';
 import Experience from './Experience';
 

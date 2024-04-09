@@ -19,7 +19,7 @@ export const Portfolio: React.FC = () => {
 	return (
 		<PortfolioContainer id="portfolio">
 			<PortfolioPresentation data-aos="fade-up">
-				<div className="portfolio--title">Portfolio Projects</div>
+				<div className="portfolio--title"><h2>Portfolio Projects</h2></div>
 				<div className="portfolio--description">
 					Projects developing for studying purposes about Front-end in general,
 					ReactJS, NextJS, and even Telegram Bots

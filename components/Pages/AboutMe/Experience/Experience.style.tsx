@@ -11,7 +11,7 @@ export const ExperienceSection = styled.section`
     }
 
     .experience__section{
-        margin-top:0.9rem;
+        margin-top:2rem;
         h5{
             font-size: 1.25rem;
         }
@@ -20,7 +20,7 @@ export const ExperienceSection = styled.section`
         }
         .experience__section--paragraph{
              font-size: 1.1rem;
-             margin-top: 0.8rem;
+             margin-top: 1rem;
         }
     }
     .experience__section--button{
@@ -38,7 +38,7 @@ export const ExperienceSection = styled.section`
         text-decoration: none;
         align-self:center;
         &:hover{
-            transform: unset;
+            transform: scale(105%);
         }
     }
 `
