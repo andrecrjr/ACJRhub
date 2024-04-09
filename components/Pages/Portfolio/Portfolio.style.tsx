@@ -8,6 +8,9 @@ export const PortfolioList = styled.section`
 	flex-wrap: wrap;
 	@media (min-width: 767px) {
 		flex-direction: row;
+		max-width: 85%;
+		justify-content:center;
+		align-items: center;
 	}
 `;
 
@@ -43,9 +46,9 @@ export const PortfolioDescription = styled.p`
 	color: 'white';
 `;
 
-export const PortfolioItem = styled.a`
-	width: 250px;
-	min-height: 150px;
+export const PortfolioItem = styled.section`
+	width: 230px;
+	min-height: 100px;
 	margin-bottom: 25px;
 	align-self: center;
 	border-radius: 8%;
@@ -53,9 +56,16 @@ export const PortfolioItem = styled.a`
 	text-decoration: none;
 	display: grid;
 	transition: transform 100ms linear;
+	position:relative;
+	.portfolio--wip{
+		position:absolute;
+		color:green;
+		z-index:100;
+	}
 	&:hover {
 		transform: scale(101%);
 	}
+
 `;
 
 export const PortfolioItemImage = styled.div<{ bgImg: String }>`
@@ -63,10 +73,11 @@ export const PortfolioItemImage = styled.div<{ bgImg: String }>`
 	background-position: fixed;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
-	height: 150px;
+	min-height: 150px;
 	transition: 200ms transform ease-in;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
+	opacity: 0.5;
 `;
 
 export const PortfolioItemList = styled.ul`
@@ -91,3 +102,7 @@ export const PortfolioSoon = styled.h3`
 	align-self: center;
 	justify-self: center;
 `;
+
+export const PortfolioListButtons = styled.section`
+	display: flex;
+`

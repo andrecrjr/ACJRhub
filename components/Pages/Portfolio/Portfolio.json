@@ -1,22 +1,24 @@
 [
-    {
-        "projectName":"Spotiflex",
-        "projectImage":"/img/spotiflex.png", 
+    {   
+        "projectName":"Steam ON",
+        "projectImage":"", 
         "projectDescription":"", 
-        "projectTags":["NextJS","Typescript", "Rest API"],
-        "projectURL":"https://spotiflex.vercel.app/",
+        "projectTags":["React","Typescript","NextJS 14", "Shadcn/ui", "Tailwind"],
+        "projectURL":"",
         "githubUrl":"",
         "inProgress":true
     },
-    {   
-        "projectName":"Animebonds",
-        "projectImage":"/img/animebonds.png", 
+        {   
+        "projectName":"Wakatime Next Auth",
+        "projectImage":"", 
         "projectDescription":"", 
-        "projectTags":["React","Javascript","Apollo Graphql", "Vite"],
-        "projectURL":"https://animebonds.surge.sh/",
+        "projectTags":["npm","Typescript","NextJS"],
+        "projectURL":"https://www.npmjs.com/package/wakatime-next-auth",
         "githubUrl":"",
         "inProgress":true
-    },{   
+    },
+    
+    {   
         "projectName":"Coineko",
         "projectImage":"", 
         "projectDescription":"", 
@@ -24,5 +26,32 @@
         "projectURL":"https://coineko.vercel.app/",
         "githubUrl":"",
         "inProgress":true
+    },
+    {
+        "projectName":"Spotiflex",
+        "projectImage":"/img/projects/spotiflex.png", 
+        "projectDescription":"", 
+        "projectTags":["NextJS","Typescript", "Rest API"],
+        "projectURL":"https://spotiflex.vercel.app/",
+        "githubUrl":"",
+        "inProgress":false
+    },
+    {   
+        "projectName":"Animebonds",
+        "projectImage":"/img/projects/animebonds.png", 
+        "projectDescription":"", 
+        "projectTags":["React","Javascript","Apollo Graphql", "Vite"],
+        "projectURL":"https://animebonds.surge.sh/",
+        "githubUrl":"",
+        "inProgress":false
+    },
+    {   
+        "projectName":"Banano Miner Watch",
+        "projectImage":"/img/projects/banano-miner-watch.png", 
+        "projectDescription":"", 
+        "projectTags":["Javascript", "REST API", "Browser AddOn", "Extension"],
+        "projectURL":"https://chrome.google.com/webstore/detail/bananominer-watch/pdnkikfbjfhikkpopfoaihhfbhaplpfc",
+        "githubUrl":"",
+        "inProgress":false
     }
 ]
