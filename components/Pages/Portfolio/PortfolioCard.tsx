@@ -2,9 +2,13 @@ import React from "react";
 import Link from "next/link";
 
 
-import { PortfolioDescription, PortfolioDescriptionContainer, PortfolioHeader, PortfolioItem, PortfolioItemImage, PortfolioItemList, PortfolioList, PortfolioListButtons } from "./Portfolio.style";
+import { PortfolioDescription, 
+	PortfolioDescriptionContainer, 
+	PortfolioHeader, PortfolioItem, 
+	PortfolioItemImage, 
+	PortfolioItemList, 
+	PortfolioList, PortfolioListButtons } from "./Portfolio.style";
 import PortfolioData from './Portfolio.json';
-
 
 
 const PortfolioCardsList = () => {
