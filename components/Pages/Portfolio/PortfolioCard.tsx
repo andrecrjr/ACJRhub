@@ -4,7 +4,8 @@ import Link from "next/link";
 
 import { PortfolioDescription, 
 	PortfolioDescriptionContainer, 
-	PortfolioHeader, PortfolioItem, 
+	PortfolioHeader, 
+	PortfolioItem, 
 	PortfolioItemImage, 
 	PortfolioItemList, 
 	PortfolioList, PortfolioListButtons } from "./Portfolio.style";
