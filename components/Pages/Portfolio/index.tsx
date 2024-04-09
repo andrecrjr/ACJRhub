@@ -4,47 +4,24 @@ import {
 	PortfolioContainer,
 	PortfolioList,
 	PortfolioItem,
-	PortfolioItemList,
 	PortfolioPresentation,
 	PortfolioItemImage,
-	PortfolioHeader,
-	PortfolioDescriptionContainer,
-	PortfolioDescription,
 	PortfolioSoon
-} from './style';
+} from './Portfolio.style';
 
-import PortfolioData from './Portfolio.json';
+import PortfolioCardsList from './PortfolioCard';
 
 export const Portfolio: React.FC = () => {
 	return (
 		<PortfolioContainer id="portfolio">
 			<PortfolioPresentation data-aos="fade-up">
-				<div className="portfolio--title">Portfolio Projects</div>
+				<div className="portfolio--title"><h2>Portfolio Projects</h2></div>
 				<div className="portfolio--description">
-					Projects developing for studying purposes about Front-end in general,
-					ReactJS, NextJS, and even Telegram Bots
+					Projects using public APIs for studying purposes about Front-end in general,
+					ReactJS, NextJS, and ECMAScript at all
 				</div>
 			</PortfolioPresentation>
-			<PortfolioList data-aos="fade-up">
-				{PortfolioData.map((portfolio, index) => (
-					<Link href={portfolio.projectURL} passHref key={index}>
-						<PortfolioItem target="_blank">
-							<PortfolioItemImage bgImg={portfolio.projectImage} />
-							<PortfolioDescriptionContainer>
-								<PortfolioHeader>{portfolio.projectName}</PortfolioHeader>
-								<PortfolioDescription>
-									{portfolio.projectDescription}
-								</PortfolioDescription>
-								<PortfolioItemList>
-									{portfolio.projectTags.map((tag) => (
-										<li key={tag}>{tag}</li>
-									))}
-								</PortfolioItemList>
-							</PortfolioDescriptionContainer>
-						</PortfolioItem>
-					</Link>
-				))}
-			</PortfolioList>
+			<PortfolioCardsList />
 			<PortfolioList data-aos="fade-up">
 				<PortfolioItem>
 					<PortfolioItemImage bgImg="/img/unfinished.jpg" />

@@ -3,22 +3,18 @@ import {
 	AboutMeContainer,
 	AboutMePresentation,
 	AboutMePresentationContainer
-} from './style';
-import Aboutme from './AboutMe.json';
+} from './About.style';
+import Skill from './Skill';
+import Experience from './Experience';
 
 export const AboutMe = () => {
 	return (
 		<AboutMeContainer id="about-me">
-			<AboutMePresentationContainer>
-				<AboutMePresentation className="title">About me!</AboutMePresentation>
+			<AboutMePresentationContainer data-aos="fade-up">
+				<AboutMePresentation className="title"><h2>About me!</h2></AboutMePresentation>
 			</AboutMePresentationContainer>
-			{Aboutme.map((item, index) => {
-				return (
-					<AboutMePresentation key={index}>
-						<p data-aos="fade-left">{item.description}</p>
-					</AboutMePresentation>
-				);
-			})}
+			<Experience/>
+			<Skill />
 		</AboutMeContainer>
 	);
 };

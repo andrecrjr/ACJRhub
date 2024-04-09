@@ -1,5 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
+import { fontPrimaryTheme } from '../styles/theme';
 
 class MyDocument extends Document {
 	render() {
@@ -12,18 +13,11 @@ class MyDocument extends Document {
 						href="https://fonts.gstatic.com"
 						crossOrigin={''}
 					/>
-					<link
-						href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;700&display=swap"
-						rel="stylesheet"
-					/>
-					<link
-						href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,400&display=swap"
-						rel="stylesheet"
-					></link>
-					<meta
+					<link href={`${fontPrimaryTheme.urlGoogleFont}`} rel="stylesheet" />
+					{<meta
 						name="google-site-verification"
 						content="google504a726bb71d2ea2"
-					/>
+					/>}
 				</Head>
 				<body>
 					<Main />

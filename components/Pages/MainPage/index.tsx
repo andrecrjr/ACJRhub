@@ -15,7 +15,7 @@ export default function MainPage({}): ReactElement {
 				<PresentationContainer>
 					<Presentation data-grid="welcome-grid" data-aos="fade-up">
 						<h2 className="presentation--world">
-							Hello World, I am <strong>André Junior</strong>
+							Hello World, I am <strong>André Carlos Junior</strong>
 						</h2>
 
 						<SocialNetworkContainer>
@@ -33,12 +33,6 @@ export default function MainPage({}): ReactElement {
 							</li>
 							<li>
 								<SocialNetwork
-									socialNetworkHref={'twitter.com/acjuni0r'}
-									socialNetworkName={'twitter'}
-								/>
-							</li>
-							<li>
-								<SocialNetwork
 									socialNetworkHref={'github.com/andrecrjr'}
 									socialNetworkName={'github'}
 								/>
@@ -48,7 +42,7 @@ export default function MainPage({}): ReactElement {
 					<Presentation data-grid="stack-grid" data-aos="fade-up">
 						<MyStackContainer>
 							<h2 className="presentation--world">
-								Front-end Developer and NodeJS Lover!
+								Front-end Developer, Python-like and geek love 🤓!
 							</h2>
 							<Stacks />
 						</MyStackContainer>

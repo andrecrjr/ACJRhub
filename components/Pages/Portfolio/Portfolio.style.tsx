@@ -8,6 +8,11 @@ export const PortfolioList = styled.section`
 	flex-wrap: wrap;
 	@media (min-width: 767px) {
 		flex-direction: row;
+		max-width: 85%;
+		justify-content:center;
+		align-items: center;
+		align-self:center;
+		gap:35px;
 	}
 `;
 
@@ -31,7 +36,7 @@ export const PortfolioPresentation = styled(Presentation)`
 
 export const PortfolioContainer = styled(Container)`
 	padding: 25px 20px;
-	background: #52528d;
+	background: ${(props) => `${props.theme.colors.backgroundPrimary}`};
 `;
 
 export const PortfolioHeader = styled.h2`
@@ -43,20 +48,30 @@ export const PortfolioDescription = styled.p`
 	color: 'white';
 `;
 
-export const PortfolioItem = styled.a`
-	width: 250px;
-	min-height: 150px;
+export const PortfolioItem = styled.section`
+	width: 230px;
+	min-height: 100px;
 	margin-bottom: 25px;
 	align-self: center;
 	border-radius: 8%;
-	box-shadow: #333333 0px 3px 14px -4px;
+	box-shadow: #646464 0px 3px 14px -8px;
 	text-decoration: none;
 	display: grid;
-	background: #21174e;
 	transition: transform 100ms linear;
-	&:hover {
-		transform: scale(1.1) !important;
+	position:relative;
+	.portfolio--wip{
+		position:absolute;
+		color:#11d822;
+		z-index:100;
+		font-weight: bold;
+		&.red{
+			color:#929292;
+		}
 	}
+	&:hover {
+		transform: scale(101%);
+	}
+
 `;
 
 export const PortfolioItemImage = styled.div<{ bgImg: String }>`
@@ -64,10 +79,11 @@ export const PortfolioItemImage = styled.div<{ bgImg: String }>`
 	background-position: fixed;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
-	height: 150px;
+	min-height: 150px;
 	transition: 200ms transform ease-in;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
+	opacity: 0.4;
 `;
 
 export const PortfolioItemList = styled.ul`
@@ -92,3 +108,19 @@ export const PortfolioSoon = styled.h3`
 	align-self: center;
 	justify-self: center;
 `;
+
+export const PortfolioListButtons = styled.section`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 15px 10px;
+
+	a{
+		text-decoration: none;
+		padding: 0 15px;
+		font-size: 1rem;
+		&:first-child{
+			border-right:3px solid white;
+		}
+	}
+`
