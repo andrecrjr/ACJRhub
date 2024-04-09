@@ -15,6 +15,9 @@ export const ExperienceSection = styled.section`
         h5{
             font-size: 1.25rem;
         }
+        .experience__role{
+            margin-bottom:0.9rem;
+        }
         ul{
             padding-left:1.3rem;
         }
@@ -22,6 +25,7 @@ export const ExperienceSection = styled.section`
              font-size: 1.1rem;
              margin-top: 1rem;
         }
+        
     }
     .experience__section--button{
         margin-top: 4rem;

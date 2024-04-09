@@ -8,7 +8,19 @@ import { ServerStyleSheet } from 'styled-components';
 import Script from 'next/script';
 
 interface ThemeType {
-	fontFamily: string;
+	logoFont: string,
+	fontFamily:  string,
+	gridWelcome: string,
+	gridHeader: string,
+	heights: {
+		menuHeight: string,
+	},
+	colors: {
+		primary: string,
+		backgroundPrimary: string,
+		backgroundAboutMe: string,
+		backgroundPortfolio: string
+	},
 }
 
 const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
@@ -23,8 +35,10 @@ body{
 
 a{
 	&:hover{
-		transform:scale(150%);
 		transition:transform 200ms linear;
+	}
+	&:visited{
+		color: ${(props) => props.theme.colors.primary}
 	}
 }
 `;

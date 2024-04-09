@@ -7,39 +7,48 @@ const Experience = (props: Props) => {
   return <ExperienceSection  data-aos="fade-up">
     <ExperienceTitle>Experiences</ExperienceTitle>
     <section className="experience__section">
-      <h5>FullStack Developer Mid-Level at Editora Globo</h5>
-      <i>2019 / current role</i>
+      <h5>Front-End Developer Mid-Level at Editora Globo</h5>
+      <p className="experience__role">2019 / current role</p>
+      <p style={{"marginBottom":"1rem"}}>
+        Currently collaborating with the O Globo Project team to enhance engagement and drive new users directly to the websites, 
+        particularly the <a href="">O Globo Newspaper website</a> one of the most famous news portal in Brazil.
+      </p>
       <details>
       <summary>More about this role</summary>
       <ul>
         <li className="experience__section--paragraph">
-          Tech Stack Enhancement: Integrated Python and NodeJS microservices, 
+          <p>Tech Stack Enhancement: Integrated Python and NodeJS microservices, 
           React with Redux-form, and Sass for 
           advanced CMS functionalities and front-end development.
+          </p>
         </li>
         <li className="experience__section--paragraph">
-          CI/CD Expertise: Gained proficiency in CI/CD pipelines using GitLab CI and GitHub Actions, enhancing the development process.  
+          <p>CI/CD Expertise: Gained proficiency in CI/CD pipelines using GitLab CI and GitHub Actions, enhancing the development process.  </p>
         </li>
         <li  className="experience__section--paragraph">
-          Agile Methodologies: Demonstrated flexibility in project management by adeptly employing both Scrum and Kanban frameworks.
+          <p>Agile Methodologies: Demonstrated flexibility in project management by adeptly employing both Scrum and Kanban frameworks.</p>
         </li>
         <li className="experience__section--paragraph">
-          SEO Optimization: Leveraged Google Search Console to refine the CMS, boosting search engine visibility and indexing health by over 90%.
+          <p>SEO Optimization: Leveraged Google Search Console to refine the CMS, boosting search engine visibility and indexing health by over 90%.</p>
         </li>
-        <li className="experience__section--paragraph">Design Collaboration: Worked closely with UX/UI teams to faithfully execute design specifications using Zeplin, Adobe XD, and Figma.</li>
-        <li className="experience__section--paragraph">Design to Development: Consistently translated design concepts into functional user interfaces, ensuring fidelity to original layouts.</li>
+        <li className="experience__section--paragraph">
+          <p>Design Collaboration: Worked closely with UX/UI teams to faithfully execute design specifications using Zeplin, Adobe XD, and Figma.</p></li>
+        <li className="experience__section--paragraph">
+          <p>Design to Development: Consistently translated design concepts into functional user interfaces, ensuring fidelity to original layouts.</p></li>
       </ul>
       </details>
     </section>
     <section className="experience__section">
       <h5>Web Developer Trainee at Editora Globo</h5>
-      <i>2018 / 2019</i>
+      <p className="experience__role">2018 / 2019</p>
+      <p style={{"marginBottom":"1rem"}}>Worked to maintain the legacy content management as a fullstack trainee</p>
       <details>
        <summary>More about this role</summary>
       <ul>
-        <li className="experience__section--paragraph">Legacy System Revitalization: Enhanced legacy systems using Django and Python 2.7, acquiring expertise in established technologies.</li>
-        <li className="experience__section--paragraph">Front-End Leadership: Led the creation of user interfaces with Less and Vanilla Javascript, merging practicality with aesthetic design.</li>
-        <li className="experience__section--paragraph">Technological Adaptability: Overcame the intricacies of older tech stacks, mastering Django, Python 2.7, Less, and Vanilla Javascript.</li>
+        <li className="experience__section--paragraph">
+          <p>Legacy System Revitalization: Enhanced legacy systems using Django and Python 2.7, acquiring expertise in established technologies.</p></li>
+        <li className="experience__section--paragraph"><p>Front-End Leadership: Led the creation of user interfaces with Less and Vanilla Javascript, merging practicality with aesthetic design.</p></li>
+        <li className="experience__section--paragraph"><p>Technological Adaptability: Overcame the intricacies of older tech stacks, mastering Django, Python 2.7, Less, and Vanilla Javascript.</p></li>
       </ul>
       </details>
     </section>

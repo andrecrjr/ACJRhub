@@ -15,6 +15,6 @@ export const theme = {
 		primary: "#fafafa",
 		backgroundPrimary: "#17171d",
 		backgroundAboutMe: "#212127",
-		backgroundPortfolio: "#0e0e0f"
+		backgroundPortfolio: "#121214"
 	},
 };

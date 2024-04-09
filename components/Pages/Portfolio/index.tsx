@@ -11,7 +11,7 @@ import {
 	PortfolioDescriptionContainer,
 	PortfolioDescription,
 	PortfolioSoon
-} from './style';
+} from './Portfolio.style';
 
 import PortfolioData from './Portfolio.json';
 

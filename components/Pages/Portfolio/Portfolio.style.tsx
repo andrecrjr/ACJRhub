@@ -31,7 +31,7 @@ export const PortfolioPresentation = styled(Presentation)`
 
 export const PortfolioContainer = styled(Container)`
 	padding: 25px 20px;
-	background: #52528d;
+	background: ${(props) => `${props.theme.colors.backgroundPrimary}`};
 `;
 
 export const PortfolioHeader = styled.h2`
@@ -49,12 +49,12 @@ export const PortfolioItem = styled.a`
 	margin-bottom: 25px;
 	align-self: center;
 	border-radius: 8%;
-	box-shadow: #2e2e2e 0px 3px 14px -8px;
+	box-shadow: #646464 0px 3px 14px -8px;
 	text-decoration: none;
 	display: grid;
 	transition: transform 100ms linear;
 	&:hover {
-		transform: scale(1.1) !important;
+		transform: scale(101%);
 	}
 `;
 
