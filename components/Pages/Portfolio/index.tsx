@@ -22,14 +22,7 @@ export const Portfolio: React.FC = () => {
 				</div>
 			</PortfolioPresentation>
 			<PortfolioCardsList />
-			<PortfolioList data-aos="fade-up">
-				<PortfolioItem>
-					<PortfolioItemImage bgImg="/img/unfinished.jpg" />
-					<PortfolioSoon style={{ padding: '15px' }}>
-						More coming soon!
-					</PortfolioSoon>
-				</PortfolioItem>
-			</PortfolioList>
+			
 		</PortfolioContainer>
 	);
 };

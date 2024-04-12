@@ -8,13 +8,22 @@ import { PortfolioDescription,
 	PortfolioItem, 
 	PortfolioItemImage, 
 	PortfolioItemList, 
-	PortfolioList, PortfolioListButtons } from "./Portfolio.style";
+	PortfolioList, PortfolioListButtons, 
+	PortfolioSoon} from "./Portfolio.style";
 import PortfolioData from './Portfolio.json';
 
 
 const PortfolioCardsList = () => {
   return (<PortfolioList data-aos="fade-up">
-				{PortfolioData.map((portfolio, index) => (
+				{PortfolioData.map((portfolio, index) =>{
+					return(
+						<>
+						{ index === 0 && <PortfolioItem>
+							<PortfolioItemImage bgImg="/img/unfinished.jpg" />
+							<PortfolioSoon style={{ padding: '15px' }}>
+								More coming soon!
+							</PortfolioSoon>
+						</PortfolioItem>}
 						<PortfolioItem key={index}>
 							{portfolio.inProgress && <span className="portfolio--wip" title="This website still being in active development">#WIP</span> || 
 							<span className="portfolio--wip red">
@@ -47,7 +56,12 @@ const PortfolioCardsList = () => {
 									</PortfolioListButtons>
 							)}
 						</PortfolioItem>
-				))}
+						<PortfolioList data-aos="fade-up">
+						
+						</PortfolioList>
+					</>
+				)}
+				)}
 			</PortfolioList>);
 };
 
