@@ -22,7 +22,6 @@ export const Portfolio: React.FC = () => {
 				</div>
 			</PortfolioPresentation>
 			<PortfolioCardsList />
-			
 		</PortfolioContainer>
 	);
 };
