@@ -1,17 +1,18 @@
 import React from 'react';
 import { GlobalHeader } from './Header.style';
-import Link from 'next/link';
+
 import { MenuLink } from './Header.style';
+import Link from 'next/link';
 
 const Header = () => {
 	return (
 		<GlobalHeader>
-			<Link href="/" passHref><a style={{textDecoration:"none"}}><h1 className="header--logo">ACJRHUB</h1></a></Link>
+			<Link href="/"><h1 className="header--logo">ACJRHUB</h1></Link>
 			<nav className="header--menu">
-				<Link href="#about-me" passHref>
+				<Link href="#about-me">
 					<MenuLink>About Me</MenuLink>
 				</Link>
-				<Link href="#portfolio" passHref>
+				<Link href="#portfolio">
 					<MenuLink>Portfolio</MenuLink>
 				</Link>
 			</nav>
