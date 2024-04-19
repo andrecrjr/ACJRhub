@@ -1,3 +1,4 @@
+"use client"
 import styled from 'styled-components';
 
 export const PresentationPic = styled.div<{ bgImage: string }>`
