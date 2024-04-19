@@ -1,3 +1,4 @@
+"use client"
 import { Container, PresentationContainer } from '../styles';
 import styled from 'styled-components';
 import { Presentation } from '../styles';

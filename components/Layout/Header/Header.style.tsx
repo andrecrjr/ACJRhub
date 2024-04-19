@@ -1,3 +1,5 @@
+
+"use client"
 import styled from 'styled-components';
 
 export const MenuLink = styled.div`
@@ -19,7 +21,7 @@ export const GlobalHeader = styled.header`
 	align-items: center;
 	background-color: transparent;
 	border-bottom: 1px solid white;
-	height: ${(props) => props.theme.heights.menuHeight};
+	height: ${({theme}) => theme.heights.menuHeight};
 	color: ${(props) => props.theme.colors.primary};
 	position: absolute;
 	top: 0;
@@ -32,6 +34,9 @@ export const GlobalHeader = styled.header`
 	}
 	.header--menu {
 		display: flex;
+	}
+	a{
+		text-decoration: none;
 	}
 	@media (min-width: 767px) {
 		display: grid;

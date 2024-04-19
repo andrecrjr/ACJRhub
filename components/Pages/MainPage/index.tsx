@@ -1,12 +1,11 @@
 import React, { ReactElement } from 'react';
 import { Container, Presentation, PresentationContainer } from '../styles';
-import { SocialNetwork } from '../../Layout/SocialNetwork';
 import { Stacks } from '../../Layout/Stacks';
 import {
 	MyStackContainer,
-	PresentationPic,
 	SocialNetworkContainer
 } from './style';
+import { SocialNetwork } from '@/components/Layout/SocialNetwork';
 
 export default function MainPage({}): ReactElement {
 	return (

@@ -18,7 +18,7 @@ const PortfolioCardsList = () => {
 				{PortfolioData.map((portfolio, index) =>{
 					return(
 						<>
-						{ index === 0 && <PortfolioItem>
+						{ index === 0 && <PortfolioItem key={index}>
 							<PortfolioItemImage bgImg="/img/unfinished.jpg" />
 							<PortfolioSoon style={{ padding: '15px' }}>
 								More coming soon!
@@ -43,15 +43,11 @@ const PortfolioCardsList = () => {
 							</PortfolioDescriptionContainer>
 							{portfolio.projectURL && (
 									<PortfolioListButtons>
-										<Link href={portfolio.projectURL} className="button" passHref>
-											<a target="_blank">
+										<Link href={portfolio.projectURL} className="button" >
 												Live View
-											</a>
 										</Link>
-										<Link href={portfolio.githubUrl} passHref>
-											<a target="_blank">
+										<Link href={portfolio.githubUrl} >
 												Github
-											</a>
 										</Link>
 									</PortfolioListButtons>
 							)}
