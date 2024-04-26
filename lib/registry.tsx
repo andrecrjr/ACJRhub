@@ -23,7 +23,6 @@ export default function StyledComponentsRegistry({
   })
  
   if (typeof window !== 'undefined') return <>{children}</>
- console.log(theme)
   return (
 	  	<StyleSheetManager sheet={styledComponentsStyleSheet.instance}>
 				{children}

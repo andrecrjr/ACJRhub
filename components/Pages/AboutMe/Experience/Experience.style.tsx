@@ -26,7 +26,6 @@ export const ExperienceSection = styled.section`
              font-size: 1.1rem;
              margin-top: 1rem;
         }
-        
     }
     .experience__section--button{
         margin-top: 4rem;

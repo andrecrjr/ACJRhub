@@ -1,10 +1,10 @@
 [
     {   
         "projectName":"Steam ON",
-        "projectImage":"", 
+        "projectImage":"https://pbs.twimg.com/media/GMDjGlkXEAAtF3j?format=jpg&name=large", 
         "projectDescription":"", 
         "projectTags":["React","Typescript","NextJS 14", "Shadcn/ui", "Tailwind"],
-        "projectURL":"",
+        "projectURL":"https://steam-on.vercel.app/",
         "githubUrl":"",
         "inProgress":true
     },

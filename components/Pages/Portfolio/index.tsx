@@ -16,10 +16,10 @@ export const Portfolio: React.FC = () => {
 		<PortfolioContainer id="portfolio">
 			<PortfolioPresentation data-aos="fade-up">
 				<div className="portfolio--title"><h2>Portfolio Projects</h2></div>
-				<div className="portfolio--description">
+				<p className="portfolio--description">
 					Projects using public APIs for studying purposes about Front-end in general,
-					ReactJS, NextJS, and ECMAScript at all
-				</div>
+					ReactJS, NextJS, and ECMAScript at all.
+				</p>
 			</PortfolioPresentation>
 			<PortfolioCardsList />
 		</PortfolioContainer>

@@ -25,9 +25,10 @@ const PortfolioCardsList = () => {
 							</PortfolioSoon>
 						</PortfolioItem>}
 						<PortfolioItem key={index}>
-							{portfolio.inProgress && <span className="portfolio--wip" title="This website still being in active development">#WIP</span> || 
-							<span className="portfolio--wip red">
-								Not active development </span>}
+							{portfolio.inProgress && 
+							<span className="portfolio--wip" title="This website still being in active development">#WIP</span> || 
+							<span className="portfolio--wip red" title="This website won't have more improvements or updates. It's finished.">
+								Finished Project </span>}
 							{portfolio.projectImage && <PortfolioItemImage bgImg={portfolio.projectImage} />}
 							<PortfolioDescriptionContainer>
 								<PortfolioHeader>{portfolio.projectName}</PortfolioHeader>

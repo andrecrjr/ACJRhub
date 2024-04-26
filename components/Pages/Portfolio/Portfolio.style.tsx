@@ -65,8 +65,10 @@ export const PortfolioItem = styled.section`
 		color:#11d822;
 		z-index:100;
 		font-weight: bold;
+		text-shadow:0px 3px 2px #26b545;
 		&.red{
-			color:#929292;
+			color:#b2b2b2;
+			text-shadow:0px 2px 2px #8e0000;
 		}
 	}
 	&:hover {
