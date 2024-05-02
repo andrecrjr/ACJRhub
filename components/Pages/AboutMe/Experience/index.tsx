@@ -52,7 +52,7 @@ const Experience = (props: Props) => {
       </ul>
       </details>
     </section>
-		<a href="#" className="experience__section--button">Download my complete resumé</a>
+		<a href="https://drive.google.com/file/d/1iKpeqeFRG4R8jH4kY-274pDIHk3AVHf8/view?usp=drive_link" className="experience__section--button">Download my complete resumé</a>
   </ExperienceSection>;
 };
 
