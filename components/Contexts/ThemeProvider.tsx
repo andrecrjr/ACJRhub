@@ -20,6 +20,7 @@ a{
 	&:hover{
 		transition:transform 200ms linear;
 	}
+	color: ${(props) => props.theme.colors.primary};
 	opacity: 0.7;
 	transition: opacity 300ms ease-out;
 	&:hover{

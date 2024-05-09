@@ -1,6 +1,5 @@
 import Header from "@/components/Layout/Header";
 import { AboutMe } from "@/components/Pages/AboutMe";
-import { AboutMeContainer } from "@/components/Pages/AboutMe/About.style";
 import MainPage from "@/components/Pages/MainPage";
 import { Portfolio } from "@/components/Pages/Portfolio";
 import { GlobalContainer } from "@/styles/global";
