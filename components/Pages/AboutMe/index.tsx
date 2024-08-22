@@ -7,14 +7,16 @@ import {
 import Skill from './Skill';
 import Experience from './Experience';
 
-export const AboutMe = () => {
+export const AboutMe = (props: { filteredSkills: [] }) => {
 	return (
 		<AboutMeContainer id="about-me">
 			<AboutMePresentationContainer data-aos="fade-up">
-				<AboutMePresentation className="title"><h2>About me!</h2></AboutMePresentation>
+				<AboutMePresentation className="title">
+					<h2>About me!</h2>
+				</AboutMePresentation>
 			</AboutMePresentationContainer>
-			<Experience/>
-			<Skill />
+			<Experience />
+			<Skill {...props} />
 		</AboutMeContainer>
 	);
 };

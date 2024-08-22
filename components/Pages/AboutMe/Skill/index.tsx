@@ -2,11 +2,11 @@ import React from 'react';
 import { SkillSetComponent } from './SkillSetComponent';
 import { SkillList, SkillsetTitle } from './Skill.style';
 
-const Skill = () => {
+const Skill = (props: { filteredSkills: [] }) => {
 	return (
 		<section data-aos="fade-up">
 			<SkillsetTitle>My Skills</SkillsetTitle>
-			<SkillSetComponent />
+			<SkillSetComponent {...props} />
 
 			<SkillList data-language="true">
 				<p>Languages</p>
