@@ -1,4 +1,3 @@
-import { SkillWrapper } from '@/components/Contexts/SkillContext';
 import Header from '@/components/Layout/Header';
 import { AboutMe } from '@/components/Pages/AboutMe';
 import MainPage from '@/components/Pages/MainPage';
