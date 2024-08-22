@@ -1,10 +1,7 @@
 import React, { ReactElement } from 'react';
 import { Container, Presentation, PresentationContainer } from '../styles';
 import { Stacks } from '../../Layout/Stacks';
-import {
-	MyStackContainer,
-	SocialNetworkContainer
-} from './style';
+import { MyStackContainer, SocialNetworkContainer } from './style';
 import { SocialNetwork } from '@/components/Layout/SocialNetwork';
 
 export default function MainPage({}): ReactElement {
@@ -41,7 +38,7 @@ export default function MainPage({}): ReactElement {
 					<Presentation data-grid="stack-grid" data-aos="fade-up">
 						<MyStackContainer>
 							<h2 className="presentation--world">
-								Front-end Developer, Python-like and geek love 🤓!
+								Front-end Developer and Platonic Fullstack Lover.
 							</h2>
 							<Stacks />
 						</MyStackContainer>

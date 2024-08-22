@@ -11,7 +11,7 @@ const Experience = (props: Props) => {
       <p className="experience__role">2019 / current role</p>
       <p style={{"marginBottom":"1rem"}}>
         Currently collaborating with the O Globo Project team to enhance engagement and drive new users directly to the websites, 
-        particularly the <a href="">O Globo Newspaper website</a> one of the most famous news portal in Brazil.
+        particularly the <a href="https://oglobo.globo.com">O Globo Newspaper</a> one of the famous news portal in Brazil.
       </p>
       <details>
         <summary>More about this role</summary>
@@ -52,7 +52,7 @@ const Experience = (props: Props) => {
         </ul>
       </details>
     </section>
-		<a href="https://drive.google.com/file/d/1iKpeqeFRG4R8jH4kY-274pDIHk3AVHf8/view?usp=drive_link" className="experience__section--button">Download my complete resumé</a>
+		<a href="https://drive.google.com/file/d/1iKpeqeFRG4R8jH4kY-274pDIHk3AVHf8/view?usp=drive_link" target="_blank" className="experience__section--button">Download my complete resumé</a>
   </ExperienceSection>;
 };
 
