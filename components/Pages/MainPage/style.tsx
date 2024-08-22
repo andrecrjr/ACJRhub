@@ -42,24 +42,32 @@ export const MyStackContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	margin-top: auto;
+	width: 100%;
 `;
 
 export const PresentationTechStack = styled.div`
+	width: 100%;
 	margin-right: 15px;
 	display: flex;
-	align-self: center;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+`;
 
-	.wakatime-svg {
-		display: none;
-		@media (min-width: 767px) {
-			display: block;
-		}
+export const FigureWakatime = styled.figure`
+	overflow-x: scroll;
+	margin: 0 auto;
+	width: 100%;
+	@media (min-width: 767px) {
+		width: auto;
+		overflow: visible;
 	}
 `;
 
 export const FigCaptionWakatime = styled.figcaption`
 	margin-top: 0.75rem;
-	font-size: 0.75rem;
+	font-size: 0.72rem;
 	text-align: center;
 `;
 

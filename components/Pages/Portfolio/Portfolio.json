@@ -1,57 +1,62 @@
 [
-    {   
-        "projectName":"Steam ON",
-        "projectImage":"https://pbs.twimg.com/media/GMDjGlkXEAAtF3j?format=jpg&name=large", 
-        "projectDescription":"", 
-        "projectTags":["React","Typescript","NextJS 14", "Shadcn/ui", "Tailwind"],
-        "projectURL":"https://steam-on.vercel.app/",
-        "githubUrl":"",
-        "inProgress":true
-    },
-        {   
-        "projectName":"Wakatime Next Auth",
-        "projectImage":"", 
-        "projectDescription":"", 
-        "projectTags":["npm","Typescript","NextJS"],
-        "projectURL":"https://www.npmjs.com/package/wakatime-next-auth",
-        "githubUrl":"https://github.com/andrecrjr/wakatime-provider-next-auth",
-        "inProgress":true
-    },
-    
-    {   
-        "projectName":"Coineko",
-        "projectImage":"/img/projects/coineko.png", 
-        "projectDescription":"", 
-        "projectTags":["React","Javascript","Rest API", "Vite"],
-        "projectURL":"https://coineko.vercel.app/",
-        "githubUrl":"https://github.com/andrecrjr/coineko",
-        "inProgress":true
-    },
-    {
-        "projectName":"Spotiflex",
-        "projectImage":"/img/projects/spotiflex.png", 
-        "projectDescription":"", 
-        "projectTags":["NextJS","Typescript", "Rest API"],
-        "projectURL":"https://spotiflex.vercel.app/",
-        "githubUrl":"https://github.com/andrecrjr/spotiflex",
-        "inProgress":false
-    },
-    {   
-        "projectName":"Animebonds",
-        "projectImage":"/img/projects/animebonds.png", 
-        "projectDescription":"", 
-        "projectTags":["React","Javascript","Apollo Graphql", "Vite"],
-        "projectURL":"https://animebonds.surge.sh/",
-        "githubUrl":"https://github.com/andrecrjr/animebonds",
-        "inProgress":false
-    },
-    {   
-        "projectName":"Banano Miner Watch",
-        "projectImage":"/img/projects/banano-miner-watch.png", 
-        "projectDescription":"", 
-        "projectTags":["Javascript", "REST API", "Browser AddOn", "Extension"],
-        "projectURL":"https://chrome.google.com/webstore/detail/bananominer-watch/pdnkikfbjfhikkpopfoaihhfbhaplpfc",
-        "githubUrl":"https://github.com/andrecrjr/bananominer-watch",
-        "inProgress":false
-    }
+	{
+		"projectName": "Game ON",
+		"projectImage": "https://pbs.twimg.com/media/GMDjGlkXEAAtF3j?format=jpg&name=large",
+		"projectDescription": "",
+		"projectTags": [
+			"React",
+			"Typescript",
+			"NextJS 14",
+			"Shadcn/ui",
+			"Tailwind"
+		],
+		"projectURL": "https://steam-on.vercel.app/",
+		"githubUrl": "",
+		"inProgress": true
+	},
+	{
+		"projectName": "Coinyan",
+		"projectImage": "/img/projects/coineko.png",
+		"projectDescription": "",
+		"projectTags": ["React", "Javascript", "Rest API", "Next 14"],
+		"projectURL": "https://coinyan.vercel.app/",
+		"githubUrl": "https://github.com/andrecrjr/coineko",
+		"inProgress": true
+	},
+	{
+		"projectName": "Wakatime Next Auth",
+		"projectImage": "",
+		"projectDescription": "",
+		"projectTags": ["npm", "Typescript", "NextJS"],
+		"projectURL": "https://www.npmjs.com/package/wakatime-next-auth",
+		"githubUrl": "https://github.com/andrecrjr/wakatime-provider-next-auth",
+		"inProgress": false
+	},
+	{
+		"projectName": "Spotiflex",
+		"projectImage": "/img/projects/spotiflex.png",
+		"projectDescription": "",
+		"projectTags": ["NextJS", "Typescript", "Rest API"],
+		"projectURL": "https://spotiflex.vercel.app/",
+		"githubUrl": "https://github.com/andrecrjr/spotiflex",
+		"inProgress": false
+	},
+	{
+		"projectName": "Animebonds",
+		"projectImage": "/img/projects/animebonds.png",
+		"projectDescription": "",
+		"projectTags": ["React", "Javascript", "Apollo Graphql", "Vite"],
+		"projectURL": "https://animebonds.surge.sh/",
+		"githubUrl": "https://github.com/andrecrjr/animebonds",
+		"inProgress": false
+	},
+	{
+		"projectName": "Banano Miner Watch",
+		"projectImage": "/img/projects/banano-miner-watch.png",
+		"projectDescription": "",
+		"projectTags": ["Javascript", "REST API", "Browser AddOn", "Extension"],
+		"projectURL": "https://chrome.google.com/webstore/detail/bananominer-watch/pdnkikfbjfhikkpopfoaihhfbhaplpfc",
+		"githubUrl": "https://github.com/andrecrjr/bananominer-watch",
+		"inProgress": false
+	}
 ]
