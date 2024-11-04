@@ -8,7 +8,7 @@ const Header = () => {
 	return (
 		<GlobalHeader>
 			<Link href="/">
-				<h1 className="header--logo">ACJRHUB</h1>
+				<h1 className="header--logo">ACJR</h1>
 			</Link>
 			<nav className="header--menu">
 				<Link href="#about-me">
