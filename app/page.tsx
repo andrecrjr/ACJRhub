@@ -3,6 +3,7 @@ import { AboutMe } from '@/components/Pages/AboutMe';
 import MainPage from '@/components/Pages/MainPage';
 import { Portfolio } from '@/components/Pages/Portfolio';
 import { GlobalContainer } from '@/styles/global';
+import portfolioData from '../components/Backup/data.json';
 
 const fetchSkillData = async () => {
 	try {
@@ -12,7 +13,7 @@ const fetchSkillData = async () => {
 		const data = await resp.json();
 		return data;
 	} catch (error) {
-		console.error(error);
+		return portfolioData;
 	}
 };
 export default async function Page() {

@@ -28,7 +28,10 @@ const PortfolioCardsList = () => {
 								</PortfolioSoon>
 							</PortfolioItem>
 						)}
-						<PortfolioItem key={portfolio.projectName}>
+						<PortfolioItem
+							key={portfolio.projectName}
+							hasImage={!!portfolio.projectImage}
+						>
 							{(portfolio.inProgress && (
 								<span
 									className="portfolio--wip doing"

@@ -4,9 +4,9 @@ import { fontPrimaryTheme } from '@/styles/theme';
 import StyledComponentsRegistry from '@/lib/registry';
 import { GlobalThemeProvider } from '@/components/Contexts/ThemeProvider';
 
-export const metadata: Metadata = {
-	title: 'ACJRHUB - Portfolio do Ac Junior',
-	description: `André Carlos Jr's Portfolio to maintain its portfolio projects and works in Front-end development!`,
+export const metadata = {
+	title: `ACJR - Portfolio of André Carlos Jr.`,
+	description: `André Carlos Jr's Portfolio showcasing projects and works in Front-end development!`,
 	robots: 'index, follow'
 };
 

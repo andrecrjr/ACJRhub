@@ -52,8 +52,8 @@ export const PortfolioDescription = styled.p`
 	padding-bottom: 10px;
 `;
 
-export const PortfolioItem = styled.section`
-	width: 28%;
+export const PortfolioItem = styled.section<{ hasImage?: boolean }>`
+	width: 80%;
 	height: auto;
 	margin-bottom: 25px;
 	align-self: center;
@@ -62,7 +62,12 @@ export const PortfolioItem = styled.section`
 	text-decoration: none;
 	display: grid;
 	transition: transform 100ms linear;
+	aspect-ratio: 16 / 8;
+	padding: ${(props) => !props.hasImage && '15px'};
 	position: relative;
+	@media screen and (min-width: 767px) {
+		width: 35%;
+	}
 	.portfolio--wip {
 		position: absolute;
 		color: #fff;
@@ -71,7 +76,7 @@ export const PortfolioItem = styled.section`
 		background: #5a0711;
 		border-radius: 4px;
 		padding: 4px;
-		font-size: 0.8rem;
+		font-size: 0.78rem;
 		&.doing {
 			&::before {
 				content: '👨‍💻 ';
@@ -95,11 +100,11 @@ export const PortfolioItemImage = styled.div<{ bgImg: string }>`
 	background-position: fixed;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
-	min-height: 200px;
 	transition: 200ms transform ease-in;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 	opacity: 0.8;
+	aspect-ratio: 16 / 8;
 `;
 
 export const PortfolioItemList = styled.ul`

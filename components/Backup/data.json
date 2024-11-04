@@ -1,0 +1,194 @@
+{
+	"data": [
+		{
+			"name": "TypeScript",
+			"percent": 48.49,
+			"color": "#3178c6"
+		},
+		{
+			"name": "JavaScript",
+			"percent": 26.75,
+			"color": "#f1e05a"
+		},
+		{
+			"name": "JSON",
+			"percent": 3.78,
+			"color": "#292929"
+		},
+		{
+			"name": "Other",
+			"percent": 3.75,
+			"color": "#16ce40"
+		},
+		{
+			"name": "HTML",
+			"percent": 3.37,
+			"color": "#e34c26"
+		},
+		{
+			"name": "YAML",
+			"percent": 2.49,
+			"color": "#cb171e"
+		},
+		{
+			"name": "SCSS",
+			"percent": 2.42,
+			"color": "#c6538c"
+		},
+		{
+			"name": "Lua",
+			"percent": 2.07,
+			"color": "#000080"
+		},
+		{
+			"name": "Python",
+			"percent": 1.33,
+			"color": "#3572A5"
+		},
+		{
+			"name": "Markdown",
+			"percent": 1.17,
+			"color": "#083fa1"
+		},
+		{
+			"name": "Bash",
+			"percent": 0.96,
+			"color": "#dc9658"
+		},
+		{
+			"name": "Makefile",
+			"percent": 0.91,
+			"color": "#427819"
+		},
+		{
+			"name": "CSS",
+			"percent": 0.65,
+			"color": "#563d7c"
+		},
+		{
+			"name": "Prisma",
+			"percent": 0.56,
+			"color": "#0c344b"
+		},
+		{
+			"name": "Docker",
+			"percent": 0.46,
+			"color": "#d62728"
+		},
+		{
+			"name": "TSConfig",
+			"percent": 0.38,
+			"color": "#9467bd"
+		},
+		{
+			"name": "Git Config",
+			"percent": 0.11,
+			"color": "#F44D27"
+		},
+		{
+			"name": "MDX",
+			"percent": 0.06,
+			"color": "#fcb32c"
+		},
+		{
+			"name": "Groovy",
+			"percent": 0.05,
+			"color": "#4298b8"
+		},
+		{
+			"name": "EJS",
+			"percent": 0.04,
+			"color": "#a91e50"
+		},
+		{
+			"name": "Nginx configuration file",
+			"percent": 0.04,
+			"color": "#8c564b"
+		},
+		{
+			"name": "Text",
+			"percent": 0.03,
+			"color": "#aec7e8"
+		},
+		{
+			"name": "Image (svg)",
+			"percent": 0.03,
+			"color": "#e377c2"
+		},
+		{
+			"name": "HCL",
+			"percent": 0.02,
+			"color": "#844FBA"
+		},
+		{
+			"name": "TOML",
+			"percent": 0.01,
+			"color": "#9c4221"
+		},
+		{
+			"name": "INI",
+			"percent": 0.01,
+			"color": "#d1dbe0"
+		},
+		{
+			"name": "SQL",
+			"percent": 0.01,
+			"color": "#e38c00"
+		},
+		{
+			"name": "CSV",
+			"percent": 0.01,
+			"color": "#237346"
+		},
+		{
+			"name": "XML",
+			"percent": 0.01,
+			"color": "#0060ac"
+		},
+		{
+			"name": "Java",
+			"percent": 0,
+			"color": "#b07219"
+		},
+		{
+			"name": "Terraform",
+			"percent": 0,
+			"color": "#f7b6d2"
+		},
+		{
+			"name": "Java Properties",
+			"percent": 0,
+			"color": "#2A6277"
+		},
+		{
+			"name": "Git",
+			"percent": 0,
+			"color": "#7f7f7f"
+		},
+		{
+			"name": "Assembly",
+			"percent": 0,
+			"color": "#6E4C13"
+		},
+		{
+			"name": "SystemVerilog",
+			"percent": 0,
+			"color": "#DAE1C2"
+		},
+		{
+			"name": "Ezhil",
+			"percent": 0,
+			"color": "#c7c7c7"
+		},
+		{
+			"name": "Batchfile",
+			"percent": 0,
+			"color": "#C1F12E"
+		},
+		{
+			"name": "Caddyfile",
+			"percent": 0,
+			"color": "#22b638"
+		}
+	]
+}
