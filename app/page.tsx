@@ -4,7 +4,6 @@ import MainPage from '@/components/Pages/MainPage';
 import { Portfolio } from '@/components/Pages/Portfolio';
 import { GlobalContainer } from '@/styles/global';
 
-type Props = {};
 const fetchSkillData = async () => {
 	try {
 		const resp = await fetch(
@@ -16,7 +15,7 @@ const fetchSkillData = async () => {
 		console.error(error);
 	}
 };
-export default async function Page({}: Props) {
+export default async function Page() {
 	const { data } = await fetchSkillData();
 	const filterSkill = data.filter(
 		(skill) => skill.percent > 1 && skill.name !== 'Other'

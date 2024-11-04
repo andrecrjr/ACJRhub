@@ -1,4 +1,4 @@
-"use client"
+'use client';
 import styled from 'styled-components';
 import { Container, Presentation } from '../styles';
 
@@ -10,10 +10,10 @@ export const PortfolioList = styled.section`
 	@media (min-width: 767px) {
 		flex-direction: row;
 		max-width: 85%;
-		justify-content:center;
+		justify-content: center;
 		align-items: center;
-		align-self:center;
-		gap:35px;
+		align-self: center;
+		gap: 35px;
 	}
 `;
 
@@ -42,16 +42,19 @@ export const PortfolioContainer = styled(Container)`
 
 export const PortfolioHeader = styled.h2`
 	font-size: 0.9rem;
-	color: white;
+	color: #fff;
 `;
 
 export const PortfolioDescription = styled.p`
-	color: 'white';
+	color: #fff;
+	font-style: italic;
+	font-size: 0.78rem;
+	padding-bottom: 10px;
 `;
 
 export const PortfolioItem = styled.section`
-	width: 230px;
-	min-height: 100px;
+	width: 360px;
+	height: auto;
 	margin-bottom: 25px;
 	align-self: center;
 	border-radius: 8%;
@@ -59,30 +62,29 @@ export const PortfolioItem = styled.section`
 	text-decoration: none;
 	display: grid;
 	transition: transform 100ms linear;
-	position:relative;
-	.portfolio--wip{
-		position:absolute;
-		color:#11d822;
-		z-index:100;
+	position: relative;
+	.portfolio--wip {
+		position: absolute;
+		color: #11d822;
+		z-index: 100;
 		font-weight: bold;
-		text-shadow:0px 3px 2px #26b545;
-		&.red{
-			color:#b2b2b2;
-			text-shadow:0px 2px 2px #8e0000;
+		text-shadow: 0px 3px 2px #26b545;
+		&.red {
+			color: #b2b2b2;
+			text-shadow: 0px 2px 2px #8e0000;
 		}
 	}
 	&:hover {
 		transform: scale(101%);
 	}
-
 `;
 
-export const PortfolioItemImage = styled.div<{ bgImg: String }>`
+export const PortfolioItemImage = styled.div<{ bgImg: string }>`
 	background: ${(props) => `url("${props.bgImg}")`};
 	background-position: fixed;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
-	min-height: 150px;
+	min-height: 214px;
 	transition: 200ms transform ease-in;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
@@ -118,12 +120,12 @@ export const PortfolioListButtons = styled.section`
 	justify-content: center;
 	padding: 0 15px 10px;
 
-	a{
+	a {
 		text-decoration: none;
 		padding: 0 15px;
 		font-size: 1rem;
-		&:first-child{
-			border-right:3px solid white;
+		&:first-child {
+			border-right: 3px solid white;
 		}
 	}
-`
+`;

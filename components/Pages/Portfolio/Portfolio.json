@@ -1,8 +1,25 @@
 [
 	{
+		"projectName": "Graph Mode",
+		"projectImage": "/img/projects/graphmode.png",
+		"projectDescription": "My first microsaas; Transform Notion into a visual graph tool. Unlock intuitive search, dynamic page connections, and create mind maps to organize and simplify navigation between your information.",
+		"projectTags": [
+			"Micro-Saas",
+			"React",
+			"Typescript",
+			"Next 14",
+			"Shadcn/ui",
+			"Tailwind",
+			"Stripe"
+		],
+		"projectURL": "https://steam-on.vercel.app/",
+		"githubUrl": "",
+		"inProgress": true
+	},
+	{
 		"projectName": "Game ON",
 		"projectImage": "https://pbs.twimg.com/media/GMDjGlkXEAAtF3j?format=jpg&name=large",
-		"projectDescription": "",
+		"projectDescription": "A gaming platform crafted with React, Typescript, NextJS 14, Shadcn/ui, and Tailwind, a simple project using Steam API.",
 		"projectTags": [
 			"React",
 			"Typescript",
@@ -17,16 +34,16 @@
 	{
 		"projectName": "Coinyan",
 		"projectImage": "/img/projects/coineko.png",
-		"projectDescription": "",
+		"projectDescription": "A cryptocurrency tracker utilizing React, Javascript, Rest API, and Next 14, providing real-time market data.",
 		"projectTags": ["React", "Javascript", "Rest API", "Next 14"],
 		"projectURL": "https://coinyan.vercel.app/",
 		"githubUrl": "https://github.com/andrecrjr/coineko",
-		"inProgress": true
+		"inProgress": false
 	},
 	{
 		"projectName": "Wakatime Next Auth",
 		"projectImage": "",
-		"projectDescription": "",
+		"projectDescription": "An npm package providing Wakatime integration with Next-Auth, built with Typescript and NextJS, enhancing productivity tracking.",
 		"projectTags": ["npm", "Typescript", "NextJS"],
 		"projectURL": "https://www.npmjs.com/package/wakatime-next-auth",
 		"githubUrl": "https://github.com/andrecrjr/wakatime-provider-next-auth",
@@ -35,7 +52,7 @@
 	{
 		"projectName": "Spotiflex",
 		"projectImage": "/img/projects/spotiflex.png",
-		"projectDescription": "",
+		"projectDescription": "A Spotify data visualization tool built with NextJS, Typescript, and Rest API, offering insights into music trends.",
 		"projectTags": ["NextJS", "Typescript", "Rest API"],
 		"projectURL": "https://spotiflex.vercel.app/",
 		"githubUrl": "https://github.com/andrecrjr/spotiflex",
@@ -44,7 +61,7 @@
 	{
 		"projectName": "Animebonds",
 		"projectImage": "/img/projects/animebonds.png",
-		"projectDescription": "",
+		"projectDescription": "An anime information hub utilizing React, Javascript, Apollo Graphql, and Vite, providing details on various anime shows.",
 		"projectTags": ["React", "Javascript", "Apollo Graphql", "Vite"],
 		"projectURL": "https://animebonds.surge.sh/",
 		"githubUrl": "https://github.com/andrecrjr/animebonds",
@@ -53,7 +70,7 @@
 	{
 		"projectName": "Banano Miner Watch",
 		"projectImage": "/img/projects/banano-miner-watch.png",
-		"projectDescription": "",
+		"projectDescription": "A browser extension monitoring Banano miner activity, built with Javascript, REST API, and Browser AddOn technology.",
 		"projectTags": ["Javascript", "REST API", "Browser AddOn", "Extension"],
 		"projectURL": "https://chrome.google.com/webstore/detail/bananominer-watch/pdnkikfbjfhikkpopfoaihhfbhaplpfc",
 		"githubUrl": "https://github.com/andrecrjr/bananominer-watch",
