@@ -53,7 +53,7 @@ export const PortfolioDescription = styled.p`
 `;
 
 export const PortfolioItem = styled.section`
-	width: 360px;
+	width: 28%;
 	height: auto;
 	margin-bottom: 25px;
 	align-self: center;
@@ -65,17 +65,28 @@ export const PortfolioItem = styled.section`
 	position: relative;
 	.portfolio--wip {
 		position: absolute;
-		color: #11d822;
+		color: #fff;
 		z-index: 100;
 		font-weight: bold;
-		text-shadow: 0px 3px 2px #26b545;
+		background: #5a0711;
+		border-radius: 4px;
+		padding: 4px;
+		font-size: 0.8rem;
+		&.doing {
+			&::before {
+				content: '👨‍💻 ';
+			}
+		}
 		&.red {
-			color: #b2b2b2;
-			text-shadow: 0px 2px 2px #8e0000;
+			background: green;
+			border-radius: 4px;
+			&::before {
+				content: '✔️ ';
+			}
 		}
 	}
 	&:hover {
-		transform: scale(101%);
+		transform: scale(101.5%);
 	}
 `;
 
@@ -84,11 +95,11 @@ export const PortfolioItemImage = styled.div<{ bgImg: string }>`
 	background-position: fixed;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
-	min-height: 214px;
+	min-height: 200px;
 	transition: 200ms transform ease-in;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
-	opacity: 0.4;
+	opacity: 0.8;
 `;
 
 export const PortfolioItemList = styled.ul`

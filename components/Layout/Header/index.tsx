@@ -15,7 +15,7 @@ const Header = () => {
 					<MenuLink>About Me</MenuLink>
 				</Link>
 				<Link href="#portfolio">
-					<MenuLink>Portfolio</MenuLink>
+					<MenuLink>Showcase</MenuLink>
 				</Link>
 			</nav>
 		</GlobalHeader>

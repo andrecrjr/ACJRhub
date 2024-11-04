@@ -31,7 +31,7 @@ const PortfolioCardsList = () => {
 						<PortfolioItem key={portfolio.projectName}>
 							{(portfolio.inProgress && (
 								<span
-									className="portfolio--wip"
+									className="portfolio--wip doing"
 									title="This website still being in active development"
 								>
 									#WIP
@@ -41,7 +41,7 @@ const PortfolioCardsList = () => {
 									className="portfolio--wip red"
 									title="This website won't have more improvements or updates. It's finished."
 								>
-									Finished Project{' '}
+									Done
 								</span>
 							)}
 							{portfolio.projectImage && (

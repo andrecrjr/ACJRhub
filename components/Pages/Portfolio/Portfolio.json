@@ -2,7 +2,7 @@
 	{
 		"projectName": "Graph Mode",
 		"projectImage": "/img/projects/graphmode.png",
-		"projectDescription": "My first microsaas; Transform Notion into a visual graph tool. Unlock intuitive search, dynamic page connections, and create mind maps to organize and simplify navigation between your information.",
+		"projectDescription": "My first microsaas; Graph Mode allows you to explore connections within Notion in a way that’s intuitive and highly visual, making it easy to navigate between content and organize complex ideas.",
 		"projectTags": [
 			"Micro-Saas",
 			"React",
@@ -12,7 +12,7 @@
 			"Tailwind",
 			"Stripe"
 		],
-		"projectURL": "https://steam-on.vercel.app/",
+		"projectURL": "https://graph-mode.com/",
 		"githubUrl": "",
 		"inProgress": true
 	},
