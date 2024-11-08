@@ -14,6 +14,12 @@ const Header = () => {
 				<Link href="#about-me">
 					<MenuLink>About Me</MenuLink>
 				</Link>
+				<Link
+					href="https://acjr.notion.site/138b5e58148c80809666d2b33948b37e?pvs=105"
+					target="_blank"
+				>
+					<MenuLink>Get in touch</MenuLink>
+				</Link>
 				<Link href="#portfolio">
 					<MenuLink>Showcase</MenuLink>
 				</Link>
